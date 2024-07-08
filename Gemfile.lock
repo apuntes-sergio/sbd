@@ -11,8 +11,6 @@ GEM
     eventmachine (1.2.7)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
-    google-protobuf (4.26.1)
-      rake (>= 13)
     google-protobuf (4.26.1-arm64-darwin)
       rake (>= 13)
     google-protobuf (4.26.1-x86_64-linux)
@@ -36,6 +34,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-default-layout (0.1.5)
+      jekyll (>= 3.0, < 5.0)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.0.0)
@@ -68,9 +68,6 @@ GEM
     rexml (3.2.6)
     rouge (4.2.1)
     safe_yaml (1.0.5)
-    sass-embedded (1.75.0)
-      google-protobuf (>= 3.25, < 5.0)
-      rake (>= 13.0.0)
     sass-embedded (1.75.0-arm64-darwin)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.75.0-x86_64-linux-gnu)
@@ -86,6 +83,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.3.3)
+  jekyll-default-layout
   just-the-docs (= 0.8.2)
 
 BUNDLED WITH

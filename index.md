@@ -1,10 +1,17 @@
 ---
-title: Home
-layout: home
+title: Introducción
+layout: default
+# permalink: /
+nav_order: 1
 ---
 ## Editado por Sergio
 
+![./docs/img/LogoNifi.jpg](./docs/img/LogoNiFi.jpeg)
 ### ahora desde local
+
+<div align="center">
+    <img src="./docs/img/LogoNiFi.jpeg" alt="NoSQL" width="20%" />
+</div>
 
 This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 
