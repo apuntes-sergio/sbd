@@ -2,6 +2,7 @@
 title: PowerBI
 description: PowerBI
 permalink: /powerbi/
+nav_exclude: true
 ---
 
 <h1>PowerBI</h1>
