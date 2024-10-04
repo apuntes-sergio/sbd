@@ -1,3 +1,10 @@
+---
+title: just-the-docs-template
+layout: default
+permalink: /readme
+nav_order: 100
+---
+
 # just-the-docs-template
 
 This is a *bare-minimum* template to create a [Jekyll] site that:

@@ -14,7 +14,7 @@ Se trata de una especie de tormentas de ideas con dos preguntas
    En cuanto a los roles en Data Analytics, salen 5, pero ahora ya se han duplicado o mas. 
    `Kibana` la vamos a utilizar con Elastic Stack
 
-El ejecicio de consultar una API, nos lleva a la URL: https://servicios.ine.es/wstempus/jsCache/ES/SERIES_TABLA/4067
+El ejercicio de consultar una API, nos lleva a la URL: https://servicios.ine.es/wstempus/jsCache/ES/SERIES_TABLA/4067
 
 # 11/10/2023
 
