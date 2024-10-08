@@ -7,9 +7,9 @@ nav_order: 1
 
 
 <div align="center">
-    <img src="/docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="NoSQL" width="27%" />
-    <img src="/docs/img/logos/Logo Centre Complet.png" alt="NoSQL" width="40%" />
-    <img src="/docs/img/logos/FSE2col_val (Custom).png" alt="NoSQL" width="13%" />
+    <img src="../img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="NoSQL" width="27%" />
+    <img src="../img/logos/Logo Centre Complet.png" alt="NoSQL" width="40%" />
+    <img src="../img/logos/FSE2col_val (Custom).png" alt="NoSQL" width="13%" />
 </div>
 
 
