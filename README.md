@@ -2,6 +2,7 @@
 title: just-the-docs-template
 layout: default
 permalink: /readme
+nav_exclude: true
 nav_order: 100
 ---
 
