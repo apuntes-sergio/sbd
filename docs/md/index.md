@@ -16,8 +16,8 @@ Otraaa
 
 <div align="center">
     <img src="/docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA" width="27%" />
-    <img src="//assets/images/logos/Logo Centre Complet.png" alt="Logo Simarro" width="40%" />
-    <img src="/main/assets/images/logos/cofinanciado.png" alt="Logo UE" width="13%" />
+    <img src="/assets/images/logos/Logo Centre Complet.png" alt="Logo Simarro" width="40%" />
+    <img src="/assets/images/logos/cofinanciado.png" alt="Logo UE" width="13%" />
 </div>
 
 
