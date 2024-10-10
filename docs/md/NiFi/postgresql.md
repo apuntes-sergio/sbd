@@ -8,7 +8,7 @@ nav_order: 4
 <h1>PostgreSQL 5</h1>
 
 <div align="center">
-    <img src="/docs/img/postgres_logo.png" alt="Logo PostgreSQL" width="15%"/>
+    <img src="docs/img/postgres_logo.png" alt="Logo PostgreSQL" width="15%"/>
 </div>
 
 <h3>Tabla de contenidos</h3>
@@ -37,7 +37,7 @@ Para la instalación de `Postgres` en `CentOS` seguiremos el siguiente [Articulo
 Sobre esta guía, cabe aconsejar realizar los siguientes cambios en el fichero de configuración `/var/lib/pgsql/data/pg_hba.conf` (el cual debe editarse como `root`)
 
 <div align="center">
-    <img src="/docs/img/pg_hba_conf.png" alt="config postgres" width="60%" />
+    <img src="docs/img/pg_hba_conf.png" alt="config postgres" width="60%" />
 </div>
 
 Observar en la imagen que se ha cambiado *peer* e *ident* por ***md5*** para las conexiones locales (desde el terminal) o mediante IPv4, de esta forma podremos conectando usando un usuario y contraseña cualquiera que se encuentre en Postgres

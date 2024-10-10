@@ -9,7 +9,7 @@ nav_order: 11
 <h1>Elastic stack</h1>
 
 <div align="center">
-    <img src="/docs/img/ELK/ElasticStackLOGO.png" alt="Logo Elastic" width="15%" />
+    <img src="docs/img/ELK/ElasticStackLOGO.png" alt="Logo Elastic" width="15%" />
 </div>
 
 <h3>Tabla de contenidos</h3>
@@ -54,7 +54,7 @@ Los sistemas **NoSQL** son una categoría de bases de datos diseñadas para mane
 **Elastic Stack**, anteriormente conocido como ***ELK Stack***, es un conjunto de herramientas de código abierto desarrolladas por Elastic para la búsqueda, análisis y visualización de datos. El nombre *Elastic Stack* refleja la ampliación del conjunto de herramientas más allá de las tres herramientas originales (*Elasticsearch*, *Logstash* y *Kibana*) para incluir una variedad de productos adicionales que complementan y amplían la funcionalidad del conjunto.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK01.webp" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK01.webp" alt="ELK" width="60%" />
 </div>
 
 El *Elastic Stack* consta de los siguientes componentes principales:
@@ -74,7 +74,7 @@ El *Elastic Stack* consta de los siguientes componentes principales:
 Estos son algunos de los componentes principales del *Elastic Stack*, pero *Elastic* también ofrece una variedad de otros productos y soluciones que complementan el conjunto, como *Elasticsearch* Security, *Elasticsearch* Machine Learning, Elastic Enterprise Search, Elastic Observability, entre otros.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK02.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK02.png" alt="ELK" width="60%" />
 </div>
 
 *Elastic Stack* es especialmente popular en entornos de desarrollo de software, operaciones de sistemas (DevOps), análisis de seguridad, monitoreo de infraestructura y análisis de registros de aplicaciones. La combinación de *Elasticsearch*, *Logstash* y *Kibana* proporciona una solución completa y escalable para la recopilación, almacenamiento, análisis y visualización de datos.
@@ -147,7 +147,7 @@ En un *índice* se pueden almacenar todos los documentos que se requiera.
   - Permite el escalado del volumen de búsquedas ya que estas pueden ejecutarse en paralelo en las réplicas.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK04.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK04.png" alt="ELK" width="60%" />
 </div>
 
 Una vez replicado, cada ***índice*** tendrá un ***shard*** primario y las réplicas (copias exactas del primario).
@@ -162,7 +162,7 @@ La información se almacena en diferentes sitios de la red (físicamente) pero l
 - Réplicas = Alta disponibilidad.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK03.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK03.png" alt="ELK" width="60%" />
 </div>
 
 ## 2.3. Tipos de nodos
@@ -196,20 +196,20 @@ En *Elasticsearch*, los nodos son las instancias individuales que forman parte d
    - Ayudan a distribuir la carga de trabajo al actuar como intermediarios entre los clientes y los nodos de datos, coordinación o ingestión.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK05.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK05.png" alt="ELK" width="60%" />
 </div>
 
 ## 2.4. Arquitectura: Lógica de funcionamiento: 
 
 La arquitectura de funcionamiento de un sistema elastic stack sería el representado por la siguiente imagen.
 <div align="center">
-    <img src="/docs/img/ELK/ELK06.png" alt="ELK" width="70%" />
+    <img src="docs/img/ELK/ELK06.png" alt="ELK" width="70%" />
 </div>
 
 Y en cuanto a las comunicaciones entre los diferentes elementos, debemos tener en cuenta : 
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK52.png" alt="ELK" width="40%" />
+    <img src="docs/img/ELK/ELK52.png" alt="ELK" width="40%" />
 </div>
 
 Elasticsearch incluye 2 protocolos de comunicación:
@@ -234,7 +234,7 @@ Nosotros vamos a utilizar un equipo Ubuntu Desktop, aunque realmente sería más
 Una configuración de esta máquina en ***Oracle VM VirtualBox*** podría ser la siguiente:
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK07.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK07.png" alt="ELK" width="50%" />
 </div>
 
 Observar que se ha incluido una cantidad elevada de memoria: 10GB (en un equipo de 16GB), se ha asignado más de un procesador y un mínimo de 50GB de disco duro.
@@ -260,19 +260,19 @@ Una vez preparado nuestro sistema, vamos a ver diferentes instalaciones. Realiza
 ## 3.2. Instalación de `docker`, `docker-compose` y `curl`
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK02.webp" alt="ELK" width="40%" />
+    <img src="docs/img/ELK/ELK02.webp" alt="ELK" width="40%" />
 </div>
 
 **Docker** es una plataforma de código abierto diseñada para facilitar la creación, implementación y ejecución de aplicaciones en contenedores. Un contenedor es una unidad ligera de software que contiene todo lo necesario para ejecutar una aplicación, incluidas las bibliotecas, las herramientas del sistema, el código y las dependencias. **Docker** proporciona una forma estandarizada de empaquetar y distribuir aplicaciones, lo que facilita la creación de entornos de desarrollo consistentes y portátiles.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK35.png" alt="ELK" width="40%" />
+    <img src="docs/img/ELK/ELK35.png" alt="ELK" width="40%" />
 </div>
 
 **Docker Compose**, por otro lado, es una herramienta que permite definir y gestionar aplicaciones ***multi-contenedor***. Con Docker Compose, se puede definir la configuración de una aplicación en un archivo YAML, especificando los servicios, imágenes de contenedor, volúmenes, redes y otros detalles necesarios para ejecutar tu aplicación. Docker Compose simplifica la gestión de aplicaciones complejas al permitirte definir y controlar todos los componentes de tu aplicación desde un solo lugar.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK03.webp" alt="ELK" width="40%" />
+    <img src="docs/img/ELK/ELK03.webp" alt="ELK" width="40%" />
 </div>
 
 Para instalar Docker y Docker Compose en Ubuntu 22.04, puedes seguir estos pasos:
@@ -339,7 +339,7 @@ sudo usermod -aG docker $USER
 
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK08.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK08.png" alt="ELK" width="50%" />
 </div>
 
 Ya que nos estamos preparando, podemos instalar también `curl`, que nos permitirá contactar desde la línea de comandos con el servidor Elasticsearh.
@@ -376,7 +376,7 @@ Aquí tienes una tabla que muestra algunas opciones típicas del comando `docker
 
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK36.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK36.png" alt="ELK" width="50%" />
 </div>
 
 Ejemplos de uso de comando `docker`
@@ -431,7 +431,7 @@ Aquí tienes algunos usos típicos de comandos docker-compose:
 | `docker-compose start` | Arranca todos los servicios previamente creados. Útil para volver a arrancar los contenedores del servicio. |
 
 <div align="center">
-   <img src="/docs/img/ELK/ELK50.png" alt="docker-compose" width="90%" />
+   <img src="docs/img/ELK/ELK50.png" alt="docker-compose" width="90%" />
 </div>
 
 
@@ -469,7 +469,7 @@ docker run --name elasticsearch --net elastic -p 9200:9200 -p 9300:9300 -e "disc
 Al terminal la instalación y puesta en marcha del contenedor nos aparece la siguiente información donde tenemos contraseña de acceso y tokens (claves) para poder unir `Kibana` u otros nodos de *Elasticsearch*. Esta información es importante retenerla.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK10.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK10.png" alt="ELK" width="50%" />
 </div>
 
 
@@ -496,7 +496,7 @@ curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200
 ```
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK11.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK11.png" alt="ELK" width="50%" />
 </div>
 
 Como podemos ver, obtenemos la respuesta mediante un JSON que nos indica que el servidor esta en marcha y nos muestra datos como el nombre de nodo y las versiones de elastic así como de `Lucene`.
@@ -512,7 +512,7 @@ curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200/_c
 Como vemos en la siguiente imagen, realmente hemos creado un cluster con un solo nodo, que será el master.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK12.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK12.png" alt="ELK" width="50%" />
 </div>
 
 Además podemos ver el status del cluster: **green**. los posibles estados de un cluster son: 
@@ -585,13 +585,13 @@ docker run --name kibana --net elastic -p 5601:5601 docker.elastic.co/kibana/kib
 Con esto, iniciamos el contenedor, si todo funciona bien, nos da un enlace desde el que acceder a kibana: 
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK13.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK13.png" alt="ELK" width="50%" />
 </div>
 
 Si abrimos el enlace accedemos al punto de unión de Kibana con Elastic, donde nos solicita que introduzcamos el token para unirnos con elastic
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK14.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK14.png" alt="ELK" width="50%" />
 </div>
 
 y ya tenemos funcionando elastic y kibana. Nos solicita la contraseña, que es la misma de elastic.
@@ -623,7 +623,7 @@ Los pasos serán:
   - [.docker-compose.yml](https://github.com/elastic/elasticsearch/blob/8.12/docs/reference/setup/install/docker/docker-compose.yml)
   - Editamos `.env` y realizamos los cambios indicados en la web de elastic
 <div align="center">
-    <img src="/docs/img/ELK/ELK16.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK16.png" alt="ELK" width="60%" />
 </div>
 Además se han realizado otros cambios, como asignar más memoria. En concreto en la imagen se ve una configuración con 1,5 GB por nodo. Es posible que funcione con 1 GB  o tal vez necesites 2GB, según versiones y equipos.
 
@@ -634,13 +634,13 @@ sudo docker-compose up -d # iniciamos el sistema. La opción -d permite una visu
 sudo docker-compose ps    # mediante este comando, podemos ver si los diferentes contenedores están activos.
 ```
 <div align="center">
-    <img src="/docs/img/ELK/ELK17.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK17.png" alt="ELK" width="60%" />
 </div>
 
 Con el comando `docker-compose ps` comprobamos que todos los nodos están activos y con esto, ya podemos intentar entrar en kibana de nuevo (http://127.0.0.1:5601/), pero ahora con la nueva contraseña: *changeme*
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK18.png" alt="ELK" width="40%" />
+    <img src="docs/img/ELK/ELK18.png" alt="ELK" width="40%" />
 </div>
 
 Por último, si queremos detener o eliminar el sistema ejecutaremos
@@ -666,7 +666,7 @@ docker volume inspect elastic_esdata01  # inspeccionamos un volumen en concreto
 ```
 
 <div align="center">
-   <img src="/docs/img/ELK/ELK19.png" alt="ELK" width="50%" />
+   <img src="docs/img/ELK/ELK19.png" alt="ELK" width="50%" />
 </div>
 
 
@@ -697,13 +697,13 @@ sudo curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:92
 y obtenemos la salida del estado:
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK20.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK20.png" alt="ELK" width="60%" />
 </div>
 
 Observar que si en algún momento cae alguno de los elementos del cluster, el estado se verá comprometido, y podrá incluso estar en riesgo de perdida de datos, tal y como se puede ver en la siguiente captura:
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK21.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK21.png" alt="ELK" width="60%" />
 </div>
 
 
@@ -715,7 +715,7 @@ curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200/_c
 En esta captura podemos apreciar tanto los nodos que componen el cluster, las direcciones, ip, como porcentajes de memoria, cpu, de carga, los roles que tiene cada nodo y quién esta actuando de *nodo master*
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK24.png" alt="ELK" width="70%" />
+    <img src="docs/img/ELK/ELK24.png" alt="ELK" width="70%" />
 </div>
 
 Otra forma para comprobar el estado de salud del cluster sería mediante 
@@ -727,7 +727,7 @@ curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200/_c
 Aquí obtenemos el estado, así como la cantidad de nodos destinados a datos, *shards*, etc... 
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK25.png" alt="ELK" width="90%" />
+    <img src="docs/img/ELK/ELK25.png" alt="ELK" width="90%" />
 </div>
 
 
@@ -739,14 +739,14 @@ Así pues entramos en `Kibana`, que nos pedirá usuario (*elastic*) y contraseñ
 
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK26.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK26.png" alt="ELK" width="50%" />
 </div>
 
 
 Aquí podemos lanzar nuestras peticiones sin necesidad de especificar todas las opciones de seguridad necesarias desde la línea de comandos, y además nos permite mantener un historial sencillo de utilizar.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK27.png" alt="ELK" width="60%" />
+    <img src="docs/img/ELK/ELK27.png" alt="ELK" width="60%" />
 </div>
 
 
@@ -926,7 +926,7 @@ En *Elasticsearch*, existen varios conceptos clave que son fundamentales para co
    - La distribución de shards en un cluster de *Elasticsearch* permite escalar horizontalmente la capacidad de almacenamiento y la capacidad de procesamiento de datos.
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK37.png" alt="ELK" width="50%" />
+    <img src="docs/img/ELK/ELK37.png" alt="ELK" width="50%" />
 </div>
 
 Podemos comprobar los **indices** que tenemos en el cluster 
@@ -955,7 +955,7 @@ curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XGET https://localhost:9
 El resultado puede ser similar a :
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK38.png" alt="ELK" width="70%" />
+    <img src="docs/img/ELK/ELK38.png" alt="ELK" width="70%" />
 </div>
 
 En esta imagen podemos ver que hemos utilizado tenemos dos shards primarios en dos de los nodos y que además en cada uno de estos nodos hay una replica. En este caso, como el cluster esta formado por los tres nodos, los datos de este índice distribuidos entre los 3 nodos de forma que tenemos shards primarios en los nodos 1 y 2 y tenemos replicas en los nodos 3 y 1, puesto que se indica que haya una replica de cada *shard*
@@ -981,7 +981,7 @@ curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XPUT https://localhost:9
 y el resultado obtenido sería como sigue:
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK39.png" alt="ELK" width="70%" />
+    <img src="docs/img/ELK/ELK39.png" alt="ELK" width="70%" />
 </div>
 
 Se puede observar que estamos utilizando los 3 nodos para almacenar el índice, de forma que en todos ellos tenemos un *shard* principal (`p`) y otos dos de replica (`r`)
@@ -1002,7 +1002,7 @@ curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XPOST https://localhost:
 y el resultado que tenemos de la inserción nos indica que se ha incluido en 3 shards: 
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK40.png" alt="ELK" width="40%" />
+    <img src="docs/img/ELK/ELK40.png" alt="ELK" width="40%" />
 </div>
 
 En la imagen anterior: 

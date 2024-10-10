@@ -68,7 +68,7 @@ Ya sea que estés involucrado en el desarrollo de aplicaciones, la gestión de d
 [**MongoDB**](http://www.mongodb.com) es una de las bases de datos NoSQL más conocidas. Sigue un modelo de datos documental,
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDBLogo.png" alt="MongoDB" width="30%" />
+    <img src="docs/img/MongoDB/MongoDBLogo.png" alt="MongoDB" width="30%" />
 </div>
 
 > Como curiosidad, su nombre viene de la palabra inglesa humongous, que significa gigantesco/enorme.
@@ -107,14 +107,14 @@ Hay una serie de conceptos que conviene conocer antes de entrar en detalle:
 - Cada documento contiene 0 o más atributos, compuestos de parejas clave/valor. Cada uno de estos documentos no sigue ningún esquema, por lo que dos documentos de una misma colección pueden contener todos los atributos diferentes entre sí.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB01.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB01.png" alt="MongoDB" width="50%" />
 </div>
 
 Así pues, tenemos que una base de datos va a contener varias colecciones, donde cada colección contendrá un conjunto de documentos. Podemos hacer una correspondencia rápida entre bases de datos Relacionales y NoSQL:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB02.png" alt="MongoDB" width="31%" />
-    <img src="/docs/img/MongoDB/MongoDB17.png" alt="MongoDB" width="60%" />
+    <img src="docs/img/MongoDB/MongoDB02.png" alt="MongoDB" width="31%" />
+    <img src="docs/img/MongoDB/MongoDB17.png" alt="MongoDB" width="60%" />
 </div>
 
 Además, *MongoDB* soporta índices, igual que cualquier RDMS, para acelerar la búsqueda de datos. Al realizar cualquier consulta, se devuelve un cursor, con el cual podemos hacer cosas tales como contar, ordenar, limitar o saltar documentos.
@@ -134,7 +134,7 @@ Repasemos el concepto de **JSON**: *JavaScript Object Notation*
 - Soporta diferentes tipos de datos como cadenas de texto, números, fecha, hora, valores nulos y booleanos.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
 </div>
 
 Mediante JavaScript podemos crear objetos que se representan con *JSON*. Internamente, *MongoDB* almacena los documentos mediante *BSON* ([Binary JSON](https://www.mongodb.com/json-and-bson)). Podemos consultar la especificación en la [web oficial de *BSON*](http://BSONSpec.org) 
@@ -193,13 +193,13 @@ Aquí tenemos un esquema de los elementos de una base de datos representada tant
 Primero la base de datos relacional
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB18.png" alt="MongoDB" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB18.png" alt="MongoDB" width="70%" />
 </div>
 
 y ahora la misma representación en *MongoDB*
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB19.png" alt="MongoDB" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB19.png" alt="MongoDB" width="70%" />
 </div>
 
 # 3. Instalación
@@ -207,7 +207,7 @@ y ahora la misma representación en *MongoDB*
 En la actualidad, *MongoDB* se como base de datos en tres productos diferentes más un conglomerado de servicios y herramientas que complementas a la base de datos.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB04.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB04.png" alt="MongoDB" width="50%" />
 </div>
 
 1. **Mongo Atlas**, como plataforma cloud, con una opción gratuita mediante un cluster de 512MB.
@@ -253,7 +253,7 @@ sudo systemctl start mongod
 sudo systemctl status mongod
 ```
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB08.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB08.png" alt="MongoDB" width="50%" />
 </div>
 
 Mediante el siguiente comando también verificamos que esta activa y su versión. 
@@ -263,7 +263,7 @@ mongod --version                                  # Comprobamos la versión
 ```
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB09.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB09.png" alt="MongoDB" width="50%" />
 </div>
 
 
@@ -273,7 +273,7 @@ mongod --version                                  # Comprobamos la versión
 Independientemente de nuestro sistema operativo, por defecto, el demonio se lanza sobre el puerto 27017. Una vez instalado, si accedemos a [http://localhost:27017](http://localhost:27017) podremos ver que nos indica cómo estamos intentando acceder mediante HTTP a *MongoDB* mediante el puerto reservado al driver nativo.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB06.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB06.png" alt="MongoDB" width="50%" />
 </div>
 
 En vez de instalarlo como un servicio en nuestra máquina, a día de hoy, es mucho más cómodo hacer uso de contenedores Docker o utilizar una solución cloud, aunque nosotros por simplicidad, de momento, realizaremos una instalación tradicional.
@@ -292,7 +292,7 @@ Para acceder a la consola de *MongoDB* escribimos:
 mongosh
 ```
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB10.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB10.png" alt="MongoDB" width="50%" />
 </div>
 
 Algunas de las operaciones básicas que podemos realizar son : 
@@ -304,7 +304,7 @@ Algunas de las operaciones básicas que podemos realizar son :
 - Listar las colecciones de una base de datos (`show collections` / `show tables`)
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB11.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB11.png" alt="MongoDB" width="50%" />
 </div>
 
 - Mostrar el nombre de la base de datos (`db.getName()` o `db`)
@@ -315,19 +315,19 @@ Algunas de las operaciones básicas que podemos realizar son :
 - Dar formato *JSON* (`db.<collectionName>.find().pretty()`)
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB12.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB12.png" alt="MongoDB" width="50%" />
 </div>
 
 Observar que al poner `.pretty()` al final, hace que la salida tenga un formato fácilmente reconocible, aunque hay ocasiones que la salida por defecto ya viene con esta método.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB13.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB13.png" alt="MongoDB" width="50%" />
 </div>
 
 Observa también que hay un diferencia entre invocar la función con los paréntesis `()`:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB14.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB14.png" alt="MongoDB" width="50%" />
 </div>
 
 ## 4.2. Creación y gestión de Bases de Datos
@@ -341,7 +341,7 @@ Así pues si intentamos entrar en una base de datos que no existe, directamente 
 Hasta que no insertes al menos un documento en una de sus colecciones, no estará disponible. Esto lo podemos hacer en el siguiente ejemplo:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB15.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB15.png" alt="MongoDB" width="50%" />
 </div>
 
 Todo esto es debido a que *MongoDB* planifica la existencia de una base de datos, pero hasta que no tenga su primer dato, no va a designar ningún tipo de recursos a la misma. En la captura anterior, se ve que ya le ha asignado 8 KiB a nuestra primera base de datos porque ya tiene algún dato.
@@ -365,7 +365,7 @@ db.dropDatabase()
 Podemos hacer uso de los comandos `use` y `db` para pasar ubicarnos en una base de datos y comprobar que efectivamente lo estamos, aunque en el prompt de la propia shell de *MongoDB* directamente ya nos dice que estamos ahí.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB16.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB16.png" alt="MongoDB" width="50%" />
 </div>
 
 
@@ -469,7 +469,7 @@ Aquí tienes un ejemplo de cómo se podría representar un documento en *MongoDB
 ```
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
 </div>
 
 
@@ -688,7 +688,7 @@ db.usuarios.replaceOne(
 En este caso, vamos a ver su ejecución, donde veremos incluso que al cambiar el nombre, este campo también cambia aunque se el utilizado para hacer la búsqueda:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB20.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB20.png" alt="MongoDB" width="50%" />
 </div>
 
 ## 5.4. Eliminar:
@@ -898,7 +898,7 @@ mongodb-compass
 Si hacemos caso a lo que nos dicen en la guía, directamente instalamos la última versión estable.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB21.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB21.png" alt="MongoDB" width="50%" />
 </div>
 
 ### 7.1.2. Tabajando con *MongoDB* Compass
@@ -908,13 +908,13 @@ Al iniciar la aplicación, la primera vez nos ofrece conectarnos a la base de da
 Una vez conectados a la base de datos, vemos todas las bases de datos exitentes. En la parte inferior tenemos una consola donde podemos actuar de la misma forma que lo hicimos anteriormente.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB22.png" alt="MongoDB" width="60%" />
+    <img src="docs/img/MongoDB/MongoDB22.png" alt="MongoDB" width="60%" />
 </div>
 
 Dentro de una base de datos, podemos acceder a las colecciones, listar los documentos, y realizar todo tipo de operaciones sobre los mismos:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB23.png" alt="MongoDB" width="60%" />
+    <img src="docs/img/MongoDB/MongoDB23.png" alt="MongoDB" width="60%" />
 </div>
 
 Así como operaciones específicas sobre documentos en concreto. Si nos colocamos con el ratón sobre un documento aparecen cuatro opciones, para *editar*, *copiar,*, *duplicar* y *borrar* el documento. Haciendo doble click, también lo editamos.
@@ -922,7 +922,7 @@ Así como operaciones específicas sobre documentos en concreto. Si nos colocamo
 Tenemos varias opciones sobre la base de datos, incluso podemos hacer consultas.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB24.png" alt="MongoDB" width="60%" />
+    <img src="docs/img/MongoDB/MongoDB24.png" alt="MongoDB" width="60%" />
 </div>
 
 En la imagen:
@@ -943,22 +943,22 @@ Si no disponemos de VSCode:
 - si tenemos la versión completa de Ubuntu, la podemos instalar desde el gestor de aplicaciones:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB25.png" alt="MongoDB" width="20%" />
-    <img src="/docs/img/MongoDB/MongoDB26.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB25.png" alt="MongoDB" width="20%" />
+    <img src="docs/img/MongoDB/MongoDB26.png" alt="MongoDB" width="50%" />
 </div>
 
 Una vez instalado VSCode, instalamos la extensión de *MongoDB* for VS Code, aqui seguimos los pasos de la web oficial donde tenemos cómo instalar y configurar la conexión: [VSCode: Working with MongoDB](https://code.visualstudio.com/docs/azure/mongodb). Para la conexión, pulsamos sobre el botón de *Advanced* y la conexión es sencilla
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB27.png" alt="MongoDB" width="40%" />    
-    <img src="/docs/img/MongoDB/MongoDB28.png" alt="MongoDB" width="40%" />
+    <img src="docs/img/MongoDB/MongoDB27.png" alt="MongoDB" width="40%" />    
+    <img src="docs/img/MongoDB/MongoDB28.png" alt="MongoDB" width="40%" />
 </div>
 
 Una vez conectados, podremos recorrer las colecciones con los datos así como utilizar un *playground* para interactuar de manera similar al shell:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB29.png" alt="MongoDB" width="40%" />    
-    <img src="/docs/img/MongoDB/MongoDB30.png" alt="MongoDB" width="40%" />
+    <img src="docs/img/MongoDB/MongoDB29.png" alt="MongoDB" width="40%" />    
+    <img src="docs/img/MongoDB/MongoDB30.png" alt="MongoDB" width="40%" />
 </div>
 
 Realmente, esta extensión este pensada para trabajar con opciones avanzadas, como crear índices, generar código en lenguajes como *javascript*, *python* o cualquier otro para realizar todo tipo de operaciones en *MongoDB*, o crear variables con datos y estos utilizarlos en nuestras operaciones. Para más información en la web de la extension: [MongoDB for VS Code. *MongoDB* Without Leaving Your IDE](https://www.mongodb.com/products/tools/vs-code)
@@ -1312,7 +1312,7 @@ En la siguiente imagen se resumen los pasos de una agrupación donde primero se 
 
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB31.png" alt="MongoDB Aggregate" width="60%" />
+    <img src="docs/img/MongoDB/MongoDB31.png" alt="MongoDB Aggregate" width="60%" />
 </div>
 
 Al realizar un pipeline dividimos las consultas en fases, donde cada fase utiliza un operador para realizar una transformación. Aunque no hay límite en el número de fases en una consulta, es importante destacar que el orden importa, y que hay optimizaciones para ayudar a que el pipeline tenga un mejor rendimiento (por ejemplo, hacer un `$match` al principio para reducir la cantidad de datos)
@@ -1369,7 +1369,7 @@ db.movies.aggregate([
 ```
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB32.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB32.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 
@@ -1405,7 +1405,7 @@ db.movies.aggregate([
 ```
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB33.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB33.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 Mediante `$avg `podemos obtener el promedio de los valores de un campo numérico.
@@ -1482,7 +1482,7 @@ db.movies.aggregate([
 ```
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB34.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB34.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 Si queremos realizar una proyección sobre el conjunto de resultados y quedarnos con un subconjunto de los campos usaremos el operador `$project`. Como resultado obtendremos el mismo número de documentos, y en el orden indicado en la proyección.
@@ -1490,7 +1490,7 @@ Si queremos realizar una proyección sobre el conjunto de resultados y quedarnos
 Veamos el resultado del siguiente ejemplo:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB35.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB35.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 Donde:

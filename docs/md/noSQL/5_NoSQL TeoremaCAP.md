@@ -29,7 +29,7 @@ Propuesto por _Eric Brewer_ en el año 2000, prueba que podemos crear una base d
 En otras palabras, podemos crear un sistema de base de datos que sea consistente y tolerante a particiones (CP), un sistema que sea disponible y tolerante a particiones (AP), o un sistema que sea consistente y disponible (CA). Pero no es posible crear una base de datos distribuida que sea consistente, disponible y tolerante a particiones al mismo tiempo.
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL15.png" alt="NoSQL" width="50%" />
+    <img src="docs/img/NoSQL/NoSQL15.png" alt="NoSQL" width="50%" />
 </div>
 
 El teorema CAP es útil cuando consideramos el sistema de base de datos que necesitamos, ya que nos permite decidir cual de las tres características vamos a descartar. La elección realmente se centra entre la disponibilidad y la consistencia, ya que la tolerancia a particiones es una decisión de arquitectura (sea o no distribuida).
@@ -43,7 +43,7 @@ Algunas bases de datos tolerantes a particiones se pueden ajustar para ser más 
 El siguiente gráfico muestra cómo dependiendo de estos atributos podemos clasificar los sistemas *NoSQL*:
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL16.png" alt="NoSQL" width="60%" />
+    <img src="docs/img/NoSQL/NoSQL16.png" alt="NoSQL" width="60%" />
 </div>
 
 

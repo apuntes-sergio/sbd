@@ -31,7 +31,7 @@ Para acceder a la consola de *MongoDB* escribimos:
 mongosh
 ```
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB10.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB10.png" alt="MongoDB" width="50%" />
 </div>
 
 Algunas de las operaciones básicas que podemos realizar son : 
@@ -43,7 +43,7 @@ Algunas de las operaciones básicas que podemos realizar son :
 - Listar las colecciones de una base de datos (`show collections` / `show tables`)
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB11.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB11.png" alt="MongoDB" width="50%" />
 </div>
 
 - Mostrar el nombre de la base de datos (`db.getName()` o `db`)
@@ -54,19 +54,19 @@ Algunas de las operaciones básicas que podemos realizar son :
 - Dar formato *JSON* (`db.<collectionName>.find().pretty()`)
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB12.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB12.png" alt="MongoDB" width="50%" />
 </div>
 
 Observar que al poner `.pretty()` al final, hace que la salida tenga un formato fácilmente reconocible, aunque hay ocasiones que la salida por defecto ya viene con esta método.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB13.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB13.png" alt="MongoDB" width="50%" />
 </div>
 
 Observa también que hay un diferencia entre invocar la función con los paréntesis `()`:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB14.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB14.png" alt="MongoDB" width="50%" />
 </div>
 
 ## 4.2. Creación y gestión de Bases de Datos
@@ -80,7 +80,7 @@ Así pues si intentamos entrar en una base de datos que no existe, directamente 
 Hasta que no insertes al menos un documento en una de sus colecciones, no estará disponible. Esto lo podemos hacer en el siguiente ejemplo:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB15.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB15.png" alt="MongoDB" width="50%" />
 </div>
 
 Todo esto es debido a que *MongoDB* planifica la existencia de una base de datos, pero hasta que no tenga su primer dato, no va a designar ningún tipo de recursos a la misma. En la captura anterior, se ve que ya le ha asignado 8 KiB a nuestra primera base de datos porque ya tiene algún dato.
@@ -104,7 +104,7 @@ db.dropDatabase()
 Podemos hacer uso de los comandos `use` y `db` para pasar ubicarnos en una base de datos y comprobar que efectivamente lo estamos, aunque en el prompt de la propia shell de *MongoDB* directamente ya nos dice que estamos ahí.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB16.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB16.png" alt="MongoDB" width="50%" />
 </div>
 
 
@@ -208,7 +208,7 @@ Aquí tienes un ejemplo de cómo se podría representar un documento en *MongoDB
 ```
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
+    <img src="docs/img/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
 </div>
 
 

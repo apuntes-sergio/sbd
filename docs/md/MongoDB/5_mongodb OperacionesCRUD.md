@@ -226,7 +226,7 @@ db.usuarios.replaceOne(
 En este caso, vamos a ver su ejecución, donde veremos incluso que al cambiar el nombre, este campo también cambia aunque se el utilizado para hacer la búsqueda:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB20.png" alt="MongoDB" width="50%" />
+    <img src="docs/img/MongoDB/MongoDB20.png" alt="MongoDB" width="50%" />
 </div>
 
 ## 5.4. Eliminar:

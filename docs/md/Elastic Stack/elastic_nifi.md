@@ -9,7 +9,7 @@ nav_order: 15
 <h1>Elastic stack</h1>
 
 <div align="center">
-    <img src="/docs/img/ELK/ElasticStackLOGO.png" alt="Logo Elastic" width="15%" />
+    <img src="docs/img/ELK/ElasticStackLOGO.png" alt="Logo Elastic" width="15%" />
 </div>
 
 <h3>Tabla de contenidos</h3>

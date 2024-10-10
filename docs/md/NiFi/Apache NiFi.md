@@ -8,7 +8,7 @@ nav_order: 5
 <h1>Apache Nifi</h1>
 
 <div align="center">
-    <img src="/docs/img/LogoNiFi.jpeg" alt="Logo Apache NiFi" width="15%" />
+    <img src="docs/img/LogoNiFi.jpeg" alt="Logo Apache NiFi" width="15%" />
 </div>
 
 <h3>Tabla de contenidos</h3>
