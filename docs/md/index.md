@@ -12,7 +12,7 @@ nav_order: 1
     <img src="docs/img/logos/FSE2col_val (Custom).png" alt="Logo UE" width="13%" />
 </div>
 
-Otraaa otra vez 2 y otra
+Otrs
 
 <div align="center">
     <img src="/docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA" width="27%" />
