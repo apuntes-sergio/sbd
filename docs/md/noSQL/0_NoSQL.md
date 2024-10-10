@@ -22,8 +22,7 @@ En esta sección veremos las bases de datos NoSQL (*Not Only SQL*)
 
 Las secciones en las que están divididas este punto son: 
 
-PRUEBASSSSS
-
+PRUEBAS DE LOGOS
 <div align="center">
     <img src="docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 1 " width="27%" />
     <img src="/docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 2 " width="27%" />
