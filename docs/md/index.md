@@ -7,9 +7,9 @@ nav_order: 1
 
 
 <div align="center">
-    <img src="docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA" width="27%" />
-    <img src="docs/img/logos/Logo Centre Complet.png" alt="Logo Simarro" width="40%" />
-    <img src="docs/img/logos/FSE2col_val (Custom).png" alt="Logo UE" width="13%" />
+    <img src="assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA" width="27%" />
+    <img src="assets/images/logos/Logo Centre Complet.png" alt="Logo Simarro" width="40%" />
+    <img src="assets/images/logos/FSE2col_val (Custom).png" alt="Logo UE" width="13%" />
 </div>
 
 # Sistemas de Big Data
@@ -26,10 +26,8 @@ Xàtiva
 Pruebassss
 
 <div align="center">
-    <img src="docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 1 " width="27%" />
-    <img src="/docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 2 " width="27%" />
     <img src="assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 3 " width="27%" />
     <img src="/assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 4 " width="27%" />
-    <img src="../img/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 5 " width="27%" />
-    <img src="./../img/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 6 " width="27%" />
+    <img src="logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 5 " width="27%" />
+    <img src="/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 6 " width="27%" />
 </div>

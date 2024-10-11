@@ -16,13 +16,11 @@ nav_order: 1
 
 PRUEBAS DE LOGOS
 <div align="center">
-    <img src="../docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 1 " width="27%" />
-    <img src="/docs/img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 2 " width="27%" />
-    <img src="../assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 3 " width="27%" />
+    <img src="assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 3 " width="27%" />
     <img src="/assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 4 " width="27%" />
-    <img src="../../img/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 5 " width="27%" />
-    <img src="./../../img/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 6 " width="27%" />
-</div>
+    <img src="logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 5 " width="27%" />
+    <img src="/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 6 " width="27%" />
+</div>>
 
 Se puede decir que estamos en la [tercera plataforma](https://en.wikipedia.org/wiki/Third_platform) del almacenamiento de datos. La primera llegó con los primeros computadores y se materializó en las bases de datos jerárquicas y en red, así como en el almacenamiento ISAM. La segunda vino de la mano de Internet y las arquitecturas cliente-servidor, lo que dio lugar a las bases de datos relacionales.
 

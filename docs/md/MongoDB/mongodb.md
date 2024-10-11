@@ -1,7 +1,7 @@
 ---
 title: MongoDB_Toto
 description: Almacenamiento de datos. NoSQL
-permalink: /mongodb/
+permalink: /mongodb_/
 nav_order: 3
 nav_exclude: true
 ---
