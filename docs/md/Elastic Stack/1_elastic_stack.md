@@ -2,9 +2,9 @@
 layout: default
 title: Elastic Stack Introducción
 parent: Elastic Stack
-description: Elastic stack. Instalación y compresión.
 permalink: /elastic/elastic
 nav_order: 11
+description: Elastic stack. Instalación y compresión.
 ---
 
 <h1>Elastic stack</h1>

@@ -2,9 +2,9 @@
 layout: default
 title: Elasticsearch. Acceso desde cliente Python 
 parent: Elastic Stack
-description: Elasticsearch. Otras formas de uso. Cómo acceder a Elasticsearch desde Python y ejemplos de uso. 
 permalink: /elastic//elastic-python
 nav_order: 14
+description: Elasticsearch. Otras formas de uso. Cómo acceder a Elasticsearch desde Python y ejemplos de uso. 
 ---
 
 <h1>Acceso a Elasticsearh desde cliente python</h1>

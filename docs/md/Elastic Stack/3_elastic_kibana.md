@@ -2,9 +2,9 @@
 layout: default
 title: Kibana 
 parent: Elastic Stack
-description: Kibana. Framework visual de elastic stack
 permalink: /elastic//kibana
 nav_order: 13
+description: Kibana. Framework visual de elastic stack
 ---
 
 <h1>Kibana</h1>

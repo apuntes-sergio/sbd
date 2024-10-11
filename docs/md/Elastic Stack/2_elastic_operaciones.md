@@ -2,9 +2,9 @@
 layout: default
 title: Elasticsearch. Operaciones 
 parent: Elastic Stack
-description: Elasticsearch. Operaciones básicas  de ingesta y consulta de datos
 permalink: /elastic//elasticsearch
 nav_order: 12
+description: Elasticsearch. Operaciones básicas  de ingesta y consulta de datos
 ---
 
 <h1>Elastic stack. Operaciones</h1>

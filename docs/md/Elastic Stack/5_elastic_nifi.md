@@ -2,9 +2,9 @@
 layout: default
 title: Elastic stack y Apache Nifi
 parent: Elastic Stack
-description: Elastic stack. Caso práctico de uso con Nifi
 permalink: /elastic//elastic_nifi
 nav_order: 15
+description: Elastic stack. Caso práctico de uso con Nifi
 ---
 
 <h1>Elastic stack</h1>
