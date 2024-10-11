@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 5. Operaciones con datos CRUD
 parent: MongoDB
 permalink: /mongodb/crud

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 7. Herramientas visuales para interactuar con *MongoDB*
 parent: MongoDB
 permalink: /mongodb/herramientas

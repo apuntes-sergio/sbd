@@ -1,4 +1,5 @@
 ---
+layout: default
 title: PostgreSQL
 description: Notas sobre el uso de Postgres en el módulo de SBD
 permalink: /postgres/

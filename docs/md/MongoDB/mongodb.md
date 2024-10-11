@@ -1,4 +1,5 @@
 ---
+layout: default
 title: MongoDB_Toto
 description: Almacenamiento de datos. NoSQL
 permalink: /mongodb_/

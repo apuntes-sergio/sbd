@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Apache NiFi
 description: Apache NiFi
 permalink: /nifi/

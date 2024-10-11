@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Kibana 
 parent: Elastic Stack
 description: Kibana. Framework visual de elastic stack

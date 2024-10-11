@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 6. Diseño de modelado de bases de datos. -schemaless-
 parent: MongoDB
 permalink: /mongodb/modeladoDatos

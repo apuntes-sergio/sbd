@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 4. Primeros pasos con *MongoDB"
 parent: MongoDB
 permalink: /mongodb/primerosPasos

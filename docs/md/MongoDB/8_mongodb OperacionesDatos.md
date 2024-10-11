@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 8. Operaciones con datos. Consultas y métodos
 parent: MongoDB
 permalink: /mongodb/operaciones

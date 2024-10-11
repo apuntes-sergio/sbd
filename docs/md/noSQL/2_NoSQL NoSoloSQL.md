@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 2. No Solo SQL
 parent: NoSQL
 permalink: /nosql/NoSoloSQL

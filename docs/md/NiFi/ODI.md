@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Oracle Data Integrator
 description: Oracle Data Integrator
 permalink: /odi/

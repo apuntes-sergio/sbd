@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 2. *MongoDB* 
 parent: MongoDB
 permalink: /mongodb/mongoDB

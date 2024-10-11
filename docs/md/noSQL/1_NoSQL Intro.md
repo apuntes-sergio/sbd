@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 1. Almacenamiento de datos
 parent: NoSQL
 permalink: /nosql/Intro

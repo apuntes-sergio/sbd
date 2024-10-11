@@ -1,4 +1,5 @@
 ---
+layout: default
 title: MongoDB
 description: Base de datos MongoDB
 permalink: /mongodb/

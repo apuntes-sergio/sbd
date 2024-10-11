@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Elasticsearch. Operaciones 
 parent: Elastic Stack
 description: Elasticsearch. Operaciones básicas  de ingesta y consulta de datos

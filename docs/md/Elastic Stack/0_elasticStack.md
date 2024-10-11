@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Elastic Stack
 description: Elastic stack. Instalación y compresión.
 permalink: /elastic/

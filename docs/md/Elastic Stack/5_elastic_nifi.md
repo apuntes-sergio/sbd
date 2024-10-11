@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Elastic stack y Apache Nifi
 parent: Elastic Stack
 description: Elastic stack. Caso práctico de uso con Nifi
