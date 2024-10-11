@@ -372,7 +372,7 @@ En la siguiente imagen se resumen los pasos de una agrupación donde primero se 
 
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB31.png" alt="MongoDB Aggregate" width="60%" />
+    <img src="../assets/images/MongoDB/MongoDB31.png" alt="MongoDB Aggregate" width="60%" />
 </div>
 
 Al realizar un pipeline dividimos las consultas en fases, donde cada fase utiliza un operador para realizar una transformación. Aunque no hay límite en el número de fases en una consulta, es importante destacar que el orden importa, y que hay optimizaciones para ayudar a que el pipeline tenga un mejor rendimiento (por ejemplo, hacer un `$match` al principio para reducir la cantidad de datos)
@@ -429,7 +429,7 @@ db.movies.aggregate([
 ```
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB32.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="../assets/images/MongoDB/MongoDB32.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 
@@ -465,7 +465,7 @@ db.movies.aggregate([
 ```
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB33.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="../assets/images/MongoDB/MongoDB33.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 Mediante `$avg `podemos obtener el promedio de los valores de un campo numérico.
@@ -542,7 +542,7 @@ db.movies.aggregate([
 ```
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB34.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="../assets/images/MongoDB/MongoDB34.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 Si queremos realizar una proyección sobre el conjunto de resultados y quedarnos con un subconjunto de los campos usaremos el operador `$project`. Como resultado obtendremos el mismo número de documentos, y en el orden indicado en la proyección.
@@ -550,7 +550,7 @@ Si queremos realizar una proyección sobre el conjunto de resultados y quedarnos
 Veamos el resultado del siguiente ejemplo:
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB35.png" alt="MongoDB Aggregate" width="70%" />
+    <img src="../assets/images/MongoDB/MongoDB35.png" alt="MongoDB Aggregate" width="70%" />
 </div>
 
 Donde:

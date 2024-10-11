@@ -22,12 +22,3 @@ Apuntes del módulo de **Sistemas de Big Data** en el *Curso de espacialización
 Dpto. Informática  
 I.E.S. Dr. Lluis Simarro Lacabra  
 Xàtiva
-
-Pruebassss
-
-<div align="center">
-    <img src="assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 3 " width="27%" />
-    <img src="/assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 4 " width="27%" />
-    <img src="logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 5 " width="27%" />
-    <img src="/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 6 " width="27%" />
-</div>

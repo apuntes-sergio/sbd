@@ -23,7 +23,7 @@ nav_order: 2
 [**MongoDB**](http://www.mongodb.com) es una de las bases de datos NoSQL más conocidas. Sigue un modelo de datos documental,
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDBLogo.png" alt="MongoDB" width="30%" />
+    <img src="../assets/images/MongoDB/MongoDBLogo.png" alt="MongoDB" width="30%" />
 </div>
 
 > Como curiosidad, su nombre viene de la palabra inglesa humongous, que significa gigantesco/enorme.
@@ -62,14 +62,14 @@ Hay una serie de conceptos que conviene conocer antes de entrar en detalle:
 - Cada documento contiene 0 o más atributos, compuestos de parejas clave/valor. Cada uno de estos documentos no sigue ningún esquema, por lo que dos documentos de una misma colección pueden contener todos los atributos diferentes entre sí.
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB01.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB01.png" alt="MongoDB" width="50%" />
 </div>
 
 Así pues, tenemos que una base de datos va a contener varias colecciones, donde cada colección contendrá un conjunto de documentos. Podemos hacer una correspondencia rápida entre bases de datos Relacionales y NoSQL:
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB02.png" alt="MongoDB" width="31%" />
-    <img src="docs/img/MongoDB/MongoDB17.png" alt="MongoDB" width="60%" />
+    <img src="../assets/images/MongoDB/MongoDB02.png" alt="MongoDB" width="31%" />
+    <img src="../assets/images/MongoDB/MongoDB17.png" alt="MongoDB" width="60%" />
 </div>
 
 Además, *MongoDB* soporta índices, igual que cualquier RDMS, para acelerar la búsqueda de datos. Al realizar cualquier consulta, se devuelve un cursor, con el cual podemos hacer cosas tales como contar, ordenar, limitar o saltar documentos.
@@ -89,7 +89,7 @@ Repasemos el concepto de **JSON**: *JavaScript Object Notation*
 - Soporta diferentes tipos de datos como cadenas de texto, números, fecha, hora, valores nulos y booleanos.
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
+    <img src="../assets/images/MongoDB/MongoDB03.png" alt="MongoDB" width="70%" />
 </div>
 
 Mediante JavaScript podemos crear objetos que se representan con *JSON*. Internamente, *MongoDB* almacena los documentos mediante *BSON* ([Binary JSON](https://www.mongodb.com/json-and-bson)). Podemos consultar la especificación en la [web oficial de *BSON*](http://BSONSpec.org) 
@@ -148,13 +148,13 @@ Aquí tenemos un esquema de los elementos de una base de datos representada tant
 Primero la base de datos relacional
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB18.png" alt="MongoDB" width="70%" />
+    <img src="../assets/images/MongoDB/MongoDB18.png" alt="MongoDB" width="70%" />
 </div>
 
 y ahora la misma representación en *MongoDB*
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB19.png" alt="MongoDB" width="70%" />
+    <img src="../assets/images/MongoDB/MongoDB19.png" alt="MongoDB" width="70%" />
 </div>
 
 

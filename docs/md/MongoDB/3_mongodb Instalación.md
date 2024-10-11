@@ -17,7 +17,7 @@ nav_order: 3
 En la actualidad, *MongoDB* se como base de datos en tres productos diferentes más un conglomerado de servicios y herramientas que complementas a la base de datos.
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB04.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB04.png" alt="MongoDB" width="50%" />
 </div>
 
 1. **Mongo Atlas**, como plataforma cloud, con una opción gratuita mediante un cluster de 512MB.
@@ -63,7 +63,7 @@ sudo systemctl start mongod
 sudo systemctl status mongod
 ```
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB08.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB08.png" alt="MongoDB" width="50%" />
 </div>
 
 Mediante el siguiente comando también verificamos que esta activa y su versión. 
@@ -73,7 +73,7 @@ mongod --version                                  # Comprobamos la versión
 ```
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB09.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB09.png" alt="MongoDB" width="50%" />
 </div>
 
 
@@ -83,7 +83,7 @@ mongod --version                                  # Comprobamos la versión
 Independientemente de nuestro sistema operativo, por defecto, el demonio se lanza sobre el puerto 27017. Una vez instalado, si accedemos a [http://localhost:27017](http://localhost:27017) podremos ver que nos indica cómo estamos intentando acceder mediante HTTP a *MongoDB* mediante el puerto reservado al driver nativo.
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDB06.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB06.png" alt="MongoDB" width="50%" />
 </div>
 
 En vez de instalarlo como un servicio en nuestra máquina, a día de hoy, es mucho más cómodo hacer uso de contenedores Docker o utilizar una solución cloud, aunque nosotros por simplicidad, de momento, realizaremos una instalación tradicional.

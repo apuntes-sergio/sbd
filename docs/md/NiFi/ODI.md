@@ -8,7 +8,7 @@ nav_order: 6
 <h1>ODI: Oracle Data Integrator</h1>
 
 <div align="center">
-    <img src="docs/img/ODI/logoODI.jpeg" alt="Logo ODI" width="15%" />
+    <img src="../assets/images/ODI/logoODI.jpeg" alt="Logo ODI" width="15%" />
 </div>
 
 <h3>Tabla de contenidos</h3>
@@ -93,7 +93,7 @@ Sobre modelos -> Sales Administration, click con botón derecho y hacemos click 
 
 
 <div align="center">
-    <img src="docs/img/ODI/ODI-01.png" alt="ODI. Ingeniería inversa" width="50%" />
+    <img src="../assets/images/ODI/ODI-01.png" alt="ODI. Ingeniería inversa" width="50%" />
 </div>
 
 El resto ya es lo mismo de siempre.... 

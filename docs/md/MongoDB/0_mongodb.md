@@ -12,7 +12,7 @@ has_children: true
 [**MongoDB**](http://www.mongodb.com) es una de las bases de datos NoSQL más conocidas. 
 
 <div align="center">
-    <img src="docs/img/MongoDB/MongoDBLogo.png" alt="MongoDB" width="30%" />
+    <img src="../assets/images/MongoDB/MongoDBLogo.png" alt="MongoDB" width="30%" />
 </div>
 
 

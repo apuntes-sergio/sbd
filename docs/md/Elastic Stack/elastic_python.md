@@ -9,7 +9,7 @@ nav_order: 14
 <h1>Acceso a Elasticsearh desde cliente python</h1>
 
 <div align="center">
-    <img src="docs/img/ELK/ElasticPythonLogo2.png" alt="Logo Elastic" width="15%" />
+    <img src="../assets/images/ELK/ElasticPythonLogo2.png" alt="Logo Elastic" width="15%" />
 </div>
 
 <h3>Tabla de contenidos</h3>
@@ -89,20 +89,20 @@ Veamos la configuración de `Nifi` para poder almacenar datos en `MongoDB`
 En primer lugar para la ingesta de datos en MongoDB, utilizamos el Processor `PutMongoRecord` o `PutMongo`
 
 <div align="center">
-    <img src="docs/img/NoSQLUsos/UsosNoSQL01.png" alt="Nifi - Elastic" width="30%" />
+    <img src="../assets/images/NoSQLUsos/UsosNoSQL01.png" alt="Nifi - Elastic" width="30%" />
 </div>
 
 Dentro del processor, debemos configurar dos servicios: 
 
 <div align="center">
-    <img src="docs/img/NoSQLUsos/UsosNoSQL02.png" alt="Nifi - Elastic" width="50%" />
+    <img src="../assets/images/NoSQLUsos/UsosNoSQL02.png" alt="Nifi - Elastic" width="50%" />
 </div>
 
 Los cuales quedan configurados como sigue:
 
 <div align="center">
-    <img src="docs/img/NoSQLUsos/UsosNoSQL03.png" alt="Nifi - Elastic" width="40%" />
-    <img src="docs/img/NoSQLUsos/UsosNoSQL04.png" alt="Nifi - Elastic" width="40%" />
+    <img src="../assets/images/NoSQLUsos/UsosNoSQL03.png" alt="Nifi - Elastic" width="40%" />
+    <img src="../assets/images/NoSQLUsos/UsosNoSQL04.png" alt="Nifi - Elastic" width="40%" />
 </div>
 
 El servicio `JsonTreeReader` no es necesario modificarlo, y el `MongoDBControllerService` simplemente asignamos la propiedad de **Mongo URL**

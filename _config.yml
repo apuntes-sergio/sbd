@@ -81,9 +81,9 @@ mermaid:
 heading_anchors: true
 
 # Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "https://github.com/just-the-docs/just-the-docs"
+# aux_links:
+#   "Just the Docs on GitHub":
+#     - "https://github.com/just-the-docs/just-the-docs"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
@@ -97,9 +97,9 @@ nav_enabled: true
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
-# nav_external_links:
-#  - title: Just the Docs on GitHub
-#    url: https://github.com/just-the-docs/just-the-docs
+nav_external_links:
+ - title: Just the Docs on GitHub
+   url: https://github.com/just-the-docs/just-the-docs
 
 # Show navigation error report
 nav_error_report: true # default is false/nil.
@@ -118,8 +118,8 @@ back_to_top_text: "Back to top"
 footer_content: 'Copyright &copy; 2023-2024 Sergio Rey. Distributed by an <a href="https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt">MIT license.'
 
 # Footer last edited timestamp
-# last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-# last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 # Footer "Edit this page on GitHub" link text
 # gh_edit_link: true # show or hide edit this page link
@@ -159,7 +159,7 @@ plugins:
   - jekyll-seo-tag
 #   - jekyll-github-metadata
   - jekyll-include-cache
-  - jekyll-sitemap
+#  - jekyll-sitemap
 
 kramdown:
   syntax_highlighter_opts:

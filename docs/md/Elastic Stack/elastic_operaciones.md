@@ -9,7 +9,7 @@ nav_order: 12
 <h1>Elastic stack. Operaciones</h1>
 
 <div align="center">
-    <img src="docs/img/ELK/ElasticLOGO.png" alt="Logo Elastic" width="15%" />
+    <img src="../assets/images/ELK/ElasticLOGO.png" alt="Logo Elastic" width="15%" />
 </div>
 
 <h3>Tabla de contenidos</h3>
@@ -41,7 +41,7 @@ nav_order: 12
 # 1. Primeros pasos
 
 <div align="center">
-    <img src="docs/img/ELK/ELK51.png" alt="ELK" width="50%" />
+    <img src="../assets/images/ELK/ELK51.png" alt="ELK" width="50%" />
 </div>
 
 Como hemos visto anteriormente, un índice esta compuesto por diversos documentos. Cada elemento o registro que se inserta en un índice es considerado un documento, y en ellos se representan los datos almacenados sobre los que más tarde realizaremos operaciones.
@@ -235,7 +235,7 @@ El comando para tal efecto sería:
 curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200/_bulk -H "Content-type: application/json" --data-binary @vehiculos_aux.json 
 ```
 <div align="center">
-    <img src="docs/img/ELK/ELK28.png" alt="ELK" width="50%" />
+    <img src="../assets/images/ELK/ELK28.png" alt="ELK" width="50%" />
 </div>
 
 Volvemos a la interfaz y si tecleamos 
@@ -246,7 +246,7 @@ GET vehiculos_test/_search
 Obtendremos un resultado similar al siguiente, donde podemos ver que se ha creado un índice con más de 10000 registros, llamado *vehiculos_test", tal y como se especificaba en el fichero
 
 <div align="center">
-    <img src="docs/img/ELK/ELK29.png" alt="ELK" width="30%" />
+    <img src="../assets/images/ELK/ELK29.png" alt="ELK" width="30%" />
 </div>
 
 Para mas información en [documentación oficial de elastic del API de Bulk](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html)
@@ -296,7 +296,7 @@ GET vehiculos_test/_search
 el resultado es el siguiente, donde indica que hay más de 10.000 *hits*, y cómo podemos ver en el resultado si lo ejecutamos, sólo nos muestra unos 10 *hits*, o sea, no los muestra todos. Esto se hace por cuestiones de optimización.
 
 <div align="center">
-    <img src="docs/img/ELK/ELK30.png" alt="ELK" width="30%" />
+    <img src="../assets/images/ELK/ELK30.png" alt="ELK" width="30%" />
 </div>
 
 Si dentro de la búsqueda incluimos el siguiente JSON indicando `track_total_hits`, entonces nos indicará exactamente la cantidad de registros. Ahora Elastic se tomará su tiempo, para calcular la cantidad exacta de *hits*, cosa que antes no ha hecho 
@@ -312,7 +312,7 @@ GET vehiculos_test/_search
 En el caso anterior, hemos añadido que nos muestre 5000 *hits*.
 
 <div align="center">
-    <img src="docs/img/ELK/ELK32.png" alt="ELK" width="30%" />
+    <img src="../assets/images/ELK/ELK32.png" alt="ELK" width="30%" />
 </div>
 
 En este caso, se obtienen 5000 *hits*, pero por contra se han utilizado 25ms para obtener estos datos. Por este motivo, elastic esta preparado para ofrecer como máximo 10.000 documentos. Existe otra [API llamada `scroll`](https://www.elastic.co/guide/en/elasticsearch/reference/current/scroll-api.html) que permite recuperar todos los documentos, pero en bloques limitados, de forma que cada petición nos ofrece una cantidad de todos ellos.
@@ -340,7 +340,7 @@ Esta solicitud devuelve el mapping de un índice específico, que describe la es
 O sea, vemos los campos y la tipificación de datos establecida.
 
 <div align="center">
-    <img src="docs/img/ELK/ELK31.png" alt="ELK" width="30%" />
+    <img src="../assets/images/ELK/ELK31.png" alt="ELK" width="30%" />
 </div>
 
 Como se puede ver en la captura anterior aparecen todos los campos introducidos en los diferentes documentos de introducidos en el índice, y su tipificación básica.
@@ -352,7 +352,7 @@ Como se puede ver en la captura anterior aparecen todos los campos introducidos 
 Elastic hace una búsqueda indexada de los elementos, por lo que a la hora de responde puede devolver respuesta ordenadas de forma más o menos acertada
 
 <div align="center">
-    <img src="docs/img/ELK/ELK33.png" alt="ELK" width="40%" />
+    <img src="../assets/images/ELK/ELK33.png" alt="ELK" width="40%" />
 </div>
 
 
@@ -375,7 +375,7 @@ En Elasticsearch, al igual que en otros motores de búsqueda, se utilizan varios
 
 
 <div align="center">
-    <img src="docs/img/ELK/ELK34.png" alt="ELK" width="35%" />
+    <img src="../assets/images/ELK/ELK34.png" alt="ELK" width="35%" />
 </div>
 
 Elasticsearch utiliza una puntuación (***score***) para determinar la clasificación de documentos coincidentes
@@ -403,7 +403,7 @@ GET restaurantes/_search
 El primer tipo de consulta que vamos a utilizar es el `match query`
 
 <div align="center">
-    <img src="docs/img/ELK/ELK41.png" alt="ELK" width="70%" />
+    <img src="../assets/images/ELK/ELK41.png" alt="ELK" width="70%" />
 </div>
 
 Así pues, al ejecutar la siguiente consulta para buscar "*Cocina Tradicional*", obtendremos los siguientes registros:
@@ -424,7 +424,7 @@ Como se puede observar, la consulta ha tenido éxito, ha obtenido un total de 17
 > **Nota**: se ha especificado un `"size":50` porque como por defecto solo muestra los 10 primeros documentos, para que los muestre todo, en este caso serán 17
 
 <div align="center">
-    <img src="docs/img/ELK/ELK42.png" alt="ELK" width="70%" />
+    <img src="../assets/images/ELK/ELK42.png" alt="ELK" width="70%" />
 </div>
 
 En los últimos registros podremos ver que exactamente no obtenemos el literal "*Cocina Tradicional*"
@@ -473,7 +473,7 @@ En este caso, nos devuelve 8 registros.
 Observar que tenemos una puntuación para cada uno de los documentos obtenidos en la búsqueda identificada por el campo `max_score`
 
 <div align="center">
-    <img src="docs/img/ELK/ELK43.png" alt="ELK" width="50%" />
+    <img src="../assets/images/ELK/ELK43.png" alt="ELK" width="50%" />
 </div>
 
 Así pues, `max_score` es un campo que se devuelve en los resultados de una consulta de búsqueda y que indica la puntuación máxima de relevancia entre todos los documentos recuperados por esa consulta. Este campo se utiliza para proporcionar una medida relativa de la relevancia de los documentos devueltos en comparación con otros documentos en el conjunto de resultados.
@@ -491,7 +491,7 @@ Básicamente depende de 3 factores:
 Para **buscar frase** y no términos separados utilizamos el operados `match_phrase`
 
 <div align="center">
-    <img src="docs/img/ELK/ELK44.png" alt="ELK" width="70%" />
+    <img src="../assets/images/ELK/ELK44.png" alt="ELK" width="70%" />
 </div>
 
 Entonces, si buscamos el literal exacto
@@ -625,7 +625,7 @@ Esto buscará documentos con un campo "fecha" dentro del rango de hace tres mese
 Si buscamos estrictamente el formato de las fechas en elastic, podemos simplificar en la siguiente imagen:
 
 <div align="center">
-    <img src="docs/img/ELK/ELK45.png" alt="ELK" width="50%" />
+    <img src="../assets/images/ELK/ELK45.png" alt="ELK" width="50%" />
 </div>
 
 Más información sobre **Date Math** en la documentación de elastic: [Date math expressions](https://www.elastic.co/guide/en/elasticsearch/client/net-api/7.17/date-math-expressions.html)
@@ -642,7 +642,7 @@ Para ello utilizaremos las **bool query** que están compuestas de varias clausu
 - **filter**, donde filtramos y ordenamos los documentos obtenidos. Esta clausula no afecta al `score` y se aplica una vez obtenidos los resultados. Es suele filtrar por fecha, números... 
 
 <div align="center">
-    <img src="docs/img/ELK/ELK46.png" alt="ELK" width="30%" />
+    <img src="../assets/images/ELK/ELK46.png" alt="ELK" width="30%" />
 </div>
 
 Por ejemplo:
@@ -976,7 +976,7 @@ Por otra parte, es posible actualizar el mapping de un índice existente para ag
 Cuando realizamos una búsqueda, podemos ver que en ocasiones dos consultas muy parecidas tiene un `score`idéntico: 
 
 <div align="center">
-    <img src="docs/img/ELK/ELK47.png" alt="ELK" width="50%" />
+    <img src="../assets/images/ELK/ELK47.png" alt="ELK" width="50%" />
 </div>
 
 Esto ocurre porque hay un proceso de análisis que ocurre cuando se ingestan los datos. En este proceso, por ejemplo, se pasa todo a *minúsculas*, por lo que realmente no importa si las consulta se realizan con mayúsculas o minúsculas. 
@@ -984,7 +984,7 @@ Esto ocurre porque hay un proceso de análisis que ocurre cuando se ingestan los
 Este análisis de datos proporciona la generación de unos **tokens** que son las *palabras principales* que podemos extraer de cualquier texto:
 
 <div align="center">
-    <img src="docs/img/ELK/ELK48.png" alt="ELK" width="50%" />
+    <img src="../assets/images/ELK/ELK48.png" alt="ELK" width="50%" />
 </div>
 
 De esta manera, para que el análisis se se hace hace de los textos grandes sean mejor “searchables” se parte el texto en TOKENS, los cuales se indexan como un único documento asociados al ID.
@@ -1000,7 +1000,7 @@ Los analizadores en Elasticsearch se componen de varios componentes que trabajan
 - **Analyzer Chains (Cadenas de Analizadores):** Secuencias de analizadores, tokenizadores y filtros que se aplican en orden al texto durante la indexación y la búsqueda. Es común configurar cadenas de analizadores personalizadas que incluyan una combinación específica de tokenizadores y filtros para adaptarse a los requisitos de análisis de texto de una aplicación.
 
 <div align="center">
-    <img src="docs/img/ELK/ELK48.png" alt="ELK" width="50%" />
+    <img src="../assets/images/ELK/ELK48.png" alt="ELK" width="50%" />
 </div>
 
 
