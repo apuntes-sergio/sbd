@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Elastic Stack
-permalink: /elastic
+permalink: /elastic/
 nav_order: 10
 has_children: true
 description: Elastic stack. Instalación y compresión.
