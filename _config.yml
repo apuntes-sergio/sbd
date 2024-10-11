@@ -56,7 +56,7 @@ search:
   rel_url: true
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
-  button: false
+  button: true
   # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
   focus_shortcut_key: "k"
 
@@ -80,10 +80,10 @@ mermaid:
 # Enable or disable heading anchors
 heading_anchors: true
 
-# Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub  (aux_link)":
-    - "https://github.com/just-the-docs/just-the-docs"
+# Aux links for the upper right navigation (a la derecha de la entrada de búsqueda)
+# aux_links:
+#   "Just the Docs on GitHub":
+#     - "https://github.com/just-the-docs/just-the-docs"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
@@ -96,10 +96,10 @@ nav_enabled: true
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
-# External navigation links
-nav_external_links:
- - title: Just the Docs on GitHub (nav_external_links)
-   url: https://github.com/just-the-docs/just-the-docs
+# External navigation links (debajos de los items de la barra de navegación izquierda)
+# nav_external_links:
+#  - title: Just the Docs on GitHub (nav_external_links)
+#    url: https://github.com/just-the-docs/just-the-docs
 
 # Show navigation error report
 nav_error_report: true # default is false/nil.

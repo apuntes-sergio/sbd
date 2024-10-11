@@ -3,7 +3,7 @@ layout: default
 title: Elastic Stack Introducción
 parent: Elastic Stack
 description: Elastic stack. Instalación y compresión.
-permalink: /elastic/elastic/
+permalink: /elastic/elastic
 nav_order: 11
 ---
 

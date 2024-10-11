@@ -3,7 +3,7 @@ layout: default
 title: Kibana 
 parent: Elastic Stack
 description: Kibana. Framework visual de elastic stack
-permalink: /elastic//kibana/
+permalink: /elastic//kibana
 nav_order: 13
 ---
 

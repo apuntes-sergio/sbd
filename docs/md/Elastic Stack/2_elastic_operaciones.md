@@ -3,7 +3,7 @@ layout: default
 title: Elasticsearch. Operaciones 
 parent: Elastic Stack
 description: Elasticsearch. Operaciones básicas  de ingesta y consulta de datos
-permalink: /elastic//elasticsearch/
+permalink: /elastic//elasticsearch
 nav_order: 12
 ---
 
