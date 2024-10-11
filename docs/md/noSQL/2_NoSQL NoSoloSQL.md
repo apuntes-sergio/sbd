@@ -51,7 +51,7 @@ Los diferentes tipos de bases de datos *NoSQL* existentes se pueden agrupar en c
     
 
 <div align="center">
-    <img src="docs/img/NoSQL/NoSQL02.jpg" alt="NoSQL" width="50%" />
+    <img src="../assets/images/NoSQL/NoSQL02.jpg" alt="NoSQL" width="50%" />
 </div>
 
 ## 2.1. Características
@@ -90,7 +90,7 @@ El particionado no es único de las bases de datos *NoSQL*. Las bases de datos r
 - **Vertical**: diferentes columnas en particiones distintas.
 
 <div align="center">
-    <img src="docs/img/NoSQL/NoSQL03.png" alt="NoSQL" width="70%" />
+    <img src="../assets/images/NoSQL/NoSQL03.png" alt="NoSQL" width="70%" />
 </div>
 
 En el caso de las bases de datos *NoSQL*, el particionado depende del modelo de la base de datos:
@@ -117,7 +117,7 @@ El particionado se realiza mediante un método consistente, como puede ser:
 - Por **rangos** de su id: por ejemplo "los usuarios del 1 al millón están en la partición 1" o "los usuarios cuyo nombre va de la A a la L" en una partición, en otra de la M a la Q, y de la R a la Z en la tercera.
     
 <div align="center">
-    <img src="docs/img/NoSQL/NoSQL04.png" alt="NoSQL" width="70%" />
+    <img src="../assets/images/NoSQL/NoSQL04.png" alt="NoSQL" width="70%" />
 </div>
     
 - Por **listas**: dividiendo los datos por la categoría del dato, es decir, en el caso de datos sobre libros, las novelas en una partición, las recetas de cocina en otra, etc..
@@ -125,7 +125,7 @@ El particionado se realiza mediante un método consistente, como puede ser:
 - Mediante un función **_hash_**, la cual devuelve un valor para un elemento que determine a qué partición pertenece.
     
 <div align="center">
-    <img src="docs/img/NoSQL/NoSQL05.png" alt="NoSQL" width="70%" />
+    <img src="../assets/images/NoSQL/NoSQL05.png" alt="NoSQL" width="70%" />
 </div>
     
 
@@ -156,7 +156,7 @@ Existen dos formas de realiza la replicación:
 Todas las escrituras se realizan en el nodo principal y después se replican a los nodos secundarios. El nodo primario es un SPOF (_single point of failure_).
 
 <div align="center">
-    <img src="docs/img/NoSQL/NoSQL06.jpg" alt="NoSQL" width="60%" />
+    <img src="../assets/images/NoSQL/NoSQL06.jpg" alt="NoSQL" width="60%" />
 </div>
 
 
@@ -165,7 +165,7 @@ Todas las escrituras se realizan en el nodo principal y después se replican a l
 Todos los nodos tienen el mismo nivel jerárquico, de manera que todos admiten escrituras. Al poder haber escrituras simultáneas sobre el mismo datos en diferentes nodos, pueden darse inconsistencia en los datos.
 
 <div align="center">
-    <img src="docs/img/NoSQL/NoSQL07.png" alt="NoSQL" width="60%" />
+    <img src="../assets/images/NoSQL/NoSQL07.png" alt="NoSQL" width="60%" />
 </div>
 
 La replicación de los datos se utiliza para alcanzar:

@@ -18,7 +18,7 @@ PRUEBAS DE LOGOS
 <div align="center">
     <img src="assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 3 " width="27%" />
     <img src="/assets/images/logos/GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 4 " width="27%" />
-    <img src="logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 5 " width="27%" />
+    <img src="../assets/images/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 5 " width="27%" />
     <img src="/logos//GVA-Conselleria-Educació-Universitats-Ocupació.png" alt="Logo GVA 6 " width="27%" />
 </div>>
 
@@ -29,7 +29,7 @@ La tercera se ve motivada por el _Big Data_, los dispositivos móviles, las arqu
 *NoSQL* aparece como una necesidad debida al creciente volumen de datos sobre usuarios, objetos y productos que las empresas tienen que almacenar, así como la frecuencia con la que se accede a los datos. Los SGDB relacionales existentes no fueron diseñados teniendo en cuenta la escalabilidad ni la flexibilidad necesaria por las frecuentes modificaciones que necesitan las aplicaciones modernas; tampoco aprovechan que el almacenamiento a día de hoy es muy barato, ni el nivel de procesamiento que alcanzan las máquinas actuales.
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL01.png" alt="NoSQL" width="60%" />
+    <img src="../assets/images/NoSQL/NoSQL01.png" alt="NoSQL" width="60%" />
 </div>
 
 
