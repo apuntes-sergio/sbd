@@ -4,6 +4,7 @@ title: 2. No Solo SQL
 parent: NoSQL
 permalink: /nosql/NoSoloSQL
 nav_order: 2
+toc: true
 ---
 
 <h1>Almacenamiento de datos. NoSQL</h1>

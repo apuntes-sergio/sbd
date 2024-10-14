@@ -22,9 +22,8 @@ defaults:
       # path: "assets/images"
     values:
       layout: "default"
-      toc: true- scope:
+      toc: true
       image: true
-
 
 favicon_ico: "/assets/images/favicon.ico"
 

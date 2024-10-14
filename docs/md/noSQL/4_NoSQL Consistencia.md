@@ -4,6 +4,7 @@ title: 4. Consistencia
 parent: NoSQL
 permalink: /nosql/Consistencia
 nav_order: 4
+toc: true
 ---
 
 <h1>Almacenamiento de datos. NoSQL</h1>

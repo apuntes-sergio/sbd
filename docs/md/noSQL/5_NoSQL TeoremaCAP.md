@@ -5,6 +5,7 @@ description: Almacenamiento de datos. NoSQL
 parent: NoSQL
 permalink: /nosql/TeoremaCAP
 nav_order: 5
+toc: true
 ---
 
 <h1>Almacenamiento de datos. NoSQL</h1>
