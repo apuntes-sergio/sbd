@@ -18,8 +18,11 @@ plugins:
 #################################################################################
 defaults:
   - scope:
-      path: "assets/images"
+      path: "" # aplicar a todos los archivos
+      # path: "assets/images"
     values:
+      layout: "default"
+      toc: true- scope:
       image: true
 
 
