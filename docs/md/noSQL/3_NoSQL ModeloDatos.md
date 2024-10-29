@@ -54,7 +54,7 @@ En una base de datos documental, la noción de **esquema es dinámico**: cada do
 
 Perfectamente podemos tener dos documentos que pertenecen a la misma colección, pero con atributos diferentes. Por ejemplo, un primer documento puede ser el siguiente:
 
-```js
+```json
 {   
     "_id": "BW001",   
     "nombre": "Bruce",   
@@ -66,7 +66,7 @@ Perfectamente podemos tener dos documentos que pertenecen a la misma colección,
 
 Mientras que un segundo documento dentro de la misma colección podría ser:
 
-```js
+```json
 {
     "_id": "JK1",   
     "nombre": "Joker",   
@@ -84,6 +84,7 @@ Mientras que un segundo documento dentro de la misma colección podría ser:
     ] 
 }
 ```
+
 Donde 
   1.  Un objeto o subdocumento permite agrupar información similar a una relación ***1:1*** de un modelo relacional. De esta manera, no necesitamos una tabla `Direccion`.
   2.  Un array puede contener valores o documentos, de manera que podríamos tener un array de documentos, permitiendo agrupar información similar a una relación ***1:N*** de un modelo relacional. De esta manera, no necesitamos una tabla `Proyectos`.
