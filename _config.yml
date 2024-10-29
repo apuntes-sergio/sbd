@@ -7,10 +7,10 @@ url: https://apuntes-sergio.github.io/sbd
 # aux_links:
 #  Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
-plugins:
-  - jekyll-default-layout
+# plugins:
+#  - jekyll-default-layout
 
-# permalink: pretty
+permalink: pretty
 
 
 #################################################################################
@@ -18,8 +18,8 @@ plugins:
 #################################################################################
 defaults:
   - scope:
-      path: "" # aplicar a todos los archivos
-      # path: "assets/images"
+      path: "docs" # an empty string here means all files in the project
+      type: "pages"
     values:
       layout: "default"
       toc: true
@@ -162,14 +162,14 @@ callouts:
 
 plugins:
   - jekyll-seo-tag
-#   - jekyll-github-metadata
+  - jekyll-github-metadata
   - jekyll-include-cache
-#  - jekyll-sitemap
+  - jekyll-sitemap
 
 kramdown:
   syntax_highlighter_opts:
     block:
-      line_numbers: false
+      line_numbers: true
 
 compress_html:
   clippings: all

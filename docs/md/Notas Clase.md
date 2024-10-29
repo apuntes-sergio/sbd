@@ -264,3 +264,118 @@ Por si hacemos un poco de repaso de este processor, aquí algunos enlaces de int
 
 - [Cloudera: Jolt quick reference for Nifi Jolt Processors](https://community.cloudera.com/t5/Community-Articles/Jolt-quick-reference-for-Nifi-Jolt-Processors/ta-p/244350)
 
+
+
+
+
+
+24/10/2024
+
+Probando con máquina Proxmox instaladon mongoDB
+
+
+# MongoDB en Contenedores Proxmox
+
+Puesta en marcha de los contenedores con MongoDB
+
+1. Hacemos la isntalación tal y como pone la web
+Pasos para conectar
+
+
+# MongoDB Atlas
+
+Dado de alta:
+Usuario : s.reymartinz@edu.gva.es
+Password: Simarret23
+
+Usuario para conexión al *Cluster()*
+Usuario administrativo
+Usr: sreymartinez
+Pwd: AW0yoVT2B829MJup
+
+
+## Accesp a **Mongo Atlas**
+
+Diferentes formas de acceder :
+
+### Con Python
+
+Instalación del driver
+```bash
+python -m pip install "pymongo[srv]"
+```
+
+Ejemplo de conexión a la base de datos:
+
+```python
+
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+
+uri = "mongodb+srv://sreymartinez:AW0yoVT2B829MJup@cluster0.azyjt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'))
+
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+```
+
+### Con MongoçDB Compass
+
+La conexión es 
+
+```
+mongodb+srv://sreymartinez:AW0yoVT2B829MJup@cluster0.azyjt.mongodb.net/
+```
+
+
+### Utilizando *mongosh*
+
+Comando siguiente:
+
+```
+mongosh "mongodb+srv://cluster0.azyjt.mongodb.net/" --apiVersion 1 --username sreymartinez --password AW0yoVT2B829MJup
+```
+
+### Utilizando **VS Code**
+
+Connecting with MongoDB for VS Code
+1. Install MongoDB for VS Code.
+In VS Code, open "Extensions" in the left navigation and search for "MongoDB for VS Code." Select the extension and click install.
+2. In VS Code, open the Command Palette.
+Click on "View" and open "Command Palette."
+Search "MongoDB: Connect" on the Command Palette and click on "Connect with Connection String."
+3. Connect to your MongoDB deployment.
+Paste your connection string into the Command Palette.
+Show Password
+
+```
+mongodb+srv://sreymartinez:AW0yoVT2B829MJup@cluster0.azyjt.mongodb.net/
+```
+
+The password for sreymartinez is included in the connection string for your first time setup. This password will not be available again after exiting this connect flow.
+4. Click “Create New Playground” in MongoDB for VS Code to get started.
+Learn more about Playgrounds 
+
+
+
+### Utilizando Atlas SQL Connect
+
+En este caso tenemos dierentes opciones:
+
+ - **Power Bi Connection** : mongodb://atlas-sql-671d161b7183374ebf59511c-azyjt.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin
+ - **JDBC Driver** : jdbc:mongodb://atlas-sql-671d161b7183374ebf59511c-azyjt.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin  - Puerto: 27017
+ - **ODBC Driver** : mongodb://atlas-sql-671d161b7183374ebf59511c-azyjt.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin
+
+
+# Instalación NiFi en Ubuntu Docker
+
+Generated Username [52fa93d8-14a8-4507-8c9c-5697aa1fbb51]
+Generated Password [i4x6oUWeiXk6MidVqUGKJj4SXdInu0ek]
+
+https://localhost:8443/nifi/login

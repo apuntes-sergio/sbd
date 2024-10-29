@@ -11,6 +11,8 @@ nav_order: 3
 <h3>Tabla de contenidos</h3>
 
 - [3. Instalación](#3-instalación)
+  - [Configurando MongoDB en los *Contenedores de Proxmox*](#configurando-mongodb-en-los-contenedores-de-proxmox)
+  - [Probando la instalación](#probando-la-instalación)
 
 
 # 3. Instalación
@@ -78,9 +80,33 @@ mongod --version                                  # Comprobamos la versión
 </div>
 
 
-
 > **Nota**: *MongoDB* también lo podemos instalar descargando el paquete .deb desde la web de *MongoDB*, pero suele dar mas problemas que con la instalación presentada
 
+
+## Configurando MongoDB en los *Contenedores de Proxmox*
+
+Para poder utilizar MongoDB en los contenedores, necestamos realizar ciertas acciones.
+
+1. En primer lugar, es adecuado asignar una IP estática a cada uno de los contenedores 
+
+2. Entramos en la configuración de MongoDB y permitimos el acceso externo 
+
+```bash
+sudo nano /etc/mongod.conf
+```
+
+3. Ponermos la IP de nuestro equipo en el apartado correspondiente
+
+```bash
+# network interfaces
+net:
+  port: 27017
+  bindIp: 127.0.0.1,10.20.90.150
+```
+
+4. Reiniciamos el servicio
+
+## Probando la instalación
 Independientemente de nuestro sistema operativo, por defecto, el demonio se lanza sobre el puerto 27017. Una vez instalado, si accedemos a [http://localhost:27017](http://localhost:27017) podremos ver que nos indica cómo estamos intentando acceder mediante HTTP a *MongoDB* mediante el puerto reservado al driver nativo.
 
 <div align="center">

@@ -4,6 +4,7 @@ title: PostgreSQL
 description: Notas sobre el uso de Postgres en el módulo de SBD
 permalink: /postgres/
 nav_order: 4
+nav_exclude: true
 ---
 
 <h1>PostgreSQL 5</h1>

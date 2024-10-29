@@ -5,6 +5,7 @@ permalink: /elastic/
 nav_order: 10
 has_children: true
 description: Elastic stack. Instalación y compresión.
+nav_exclude: true
 ---
 
 <h1>Elastic stack</h1>

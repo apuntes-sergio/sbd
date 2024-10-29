@@ -4,6 +4,7 @@ title: Apache NiFi
 description: Apache NiFi
 permalink: /nifi/
 nav_order: 5
+nav_exclude: true
 ---
 
 <h1>Apache Nifi</h1>

@@ -12,12 +12,12 @@ nav_order: 1
     <img src="assets/images/logos/FSE2col_val (Custom).png" alt="Logo UE" width="13%" />
 </div>
 
-# Sistemas de Big Data
+# Sistemas en Big Data
 
 Apuntes del módulo de **Sistemas de Big Data** en el *Curso de espacialización de Inteligencia Artificial y Big Data*
 
-- Elaboracion: *Sergio Rey Martínez*
-- Colaboracion : *Jorge Soro Domenech*
+- Elaboración: *Sergio Rey Martínez*
+- Colaboración : *Jorge Soro Domenech*
 
 Dpto. Informática  
 I.E.S. Dr. Lluis Simarro Lacabra  

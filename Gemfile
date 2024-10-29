@@ -8,3 +8,5 @@ gem "just-the-docs", "0.8.2" # pinned to the current release
 
 # añadido
 gem "jekyll-default-layout"  # se supone que es el layout
+gem "jekyll-github-metadata"
+gem "jekyll-sitemap"

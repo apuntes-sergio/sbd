@@ -4,6 +4,7 @@ title: Oracle Data Integrator
 description: Oracle Data Integrator
 permalink: /odi/
 nav_order: 6
+nav_exclude: true
 ---
 
 <h1>ODI: Oracle Data Integrator</h1>
