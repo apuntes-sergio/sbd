@@ -20,5 +20,5 @@ Apuntes del módulo de **Sistemas de Big Data** en el *Curso de espacialización
 - Colaboración : *Jorge Soro Domenech*
 
 Dpto. Informática  
-I.E.S. Dr. Lluis Simarro Lacabra  
+I.E.S. Doctor Lluis Simarro Lacabra  
 Xàtiva
