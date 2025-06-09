@@ -1,4 +1,5 @@
 ---
+layout: default
 title: PowerBI
 description: PowerBI
 permalink: /powerbi/

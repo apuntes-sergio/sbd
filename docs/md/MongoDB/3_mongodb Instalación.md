@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 3. Instalación 
 parent: MongoDB
 permalink: /mongodb/Instalacion
@@ -10,6 +11,8 @@ nav_order: 3
 <h3>Tabla de contenidos</h3>
 
 - [3. Instalación](#3-instalación)
+  - [Configurando MongoDB en los *Contenedores de Proxmox*](#configurando-mongodb-en-los-contenedores-de-proxmox)
+  - [Probando la instalación](#probando-la-instalación)
 
 
 # 3. Instalación
@@ -17,7 +20,7 @@ nav_order: 3
 En la actualidad, *MongoDB* se como base de datos en tres productos diferentes más un conglomerado de servicios y herramientas que complementas a la base de datos.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB04.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB04.png" alt="MongoDB" width="50%" />
 </div>
 
 1. **Mongo Atlas**, como plataforma cloud, con una opción gratuita mediante un cluster de 512MB.
@@ -63,7 +66,7 @@ sudo systemctl start mongod
 sudo systemctl status mongod
 ```
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB08.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB08.png" alt="MongoDB" width="50%" />
 </div>
 
 Mediante el siguiente comando también verificamos que esta activa y su versión. 
@@ -73,17 +76,41 @@ mongod --version                                  # Comprobamos la versión
 ```
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB09.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB09.png" alt="MongoDB" width="50%" />
 </div>
-
 
 
 > **Nota**: *MongoDB* también lo podemos instalar descargando el paquete .deb desde la web de *MongoDB*, pero suele dar mas problemas que con la instalación presentada
 
+
+## Configurando MongoDB en los *Contenedores de Proxmox*
+
+Para poder utilizar MongoDB en los contenedores, necestamos realizar ciertas acciones.
+
+1. En primer lugar, es adecuado asignar una IP estática a cada uno de los contenedores 
+
+2. Entramos en la configuración de MongoDB y permitimos el acceso externo 
+
+```bash
+sudo nano /etc/mongod.conf
+```
+
+3. Ponermos la IP de nuestro equipo en el apartado correspondiente
+
+```bash
+# network interfaces
+net:
+  port: 27017
+  bindIp: 127.0.0.1,10.20.90.150
+```
+
+4. Reiniciamos el servicio
+
+## Probando la instalación
 Independientemente de nuestro sistema operativo, por defecto, el demonio se lanza sobre el puerto 27017. Una vez instalado, si accedemos a [http://localhost:27017](http://localhost:27017) podremos ver que nos indica cómo estamos intentando acceder mediante HTTP a *MongoDB* mediante el puerto reservado al driver nativo.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB06.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB06.png" alt="MongoDB" width="50%" />
 </div>
 
 En vez de instalarlo como un servicio en nuestra máquina, a día de hoy, es mucho más cómodo hacer uso de contenedores Docker o utilizar una solución cloud, aunque nosotros por simplicidad, de momento, realizaremos una instalación tradicional.

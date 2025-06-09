@@ -25,8 +25,8 @@ Vamos a ver cómo interacturar con los datos Elasticsearch. para ello, vamos a i
 A partir del interface de Kibana, podemos incorporar los datos de ejemplo:
 
 <div align="center">
-    <img src="/docs/img/ELK/ELK22.png" alt="ELK" width="30%" />
-    <img src="/docs/img/ELK/ELK23.png" alt="ELK" width="30%" />
+    <img src="../assets/images/ELK/ELK22.png" alt="ELK" width="30%" />
+    <img src="../assets/images/ELK/ELK23.png" alt="ELK" width="30%" />
 </div>
 
 Añadimos los datos del **Sample flight data**

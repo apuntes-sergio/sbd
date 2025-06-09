@@ -1,8 +1,10 @@
 ---
+layout: default
 title: 2. No Solo SQL
 parent: NoSQL
 permalink: /nosql/NoSoloSQL
 nav_order: 2
+toc: true
 ---
 
 <h1>Almacenamiento de datos. NoSQL</h1>
@@ -28,39 +30,40 @@ nav_order: 2
 
 Si definimos **NoSQL** formalmente, podemos decir que se trata de un conjunto de tecnologías que permiten el procesamiento rápido y eficiente de conjuntos de datos dando la mayor importancia al rendimiento, la fiabilidad y la agilidad.
 
-Si nos basamos en el acrónimo, el término da la sensación que se refiere a cualquier almacén de datos que no sigue un modelo relacional, los datos no son relacionales y por tanto no utilizan SQL como lenguaje de consulta. Realmente implica que el _No_ hace referencia a _not only_, es decir, que los sistemas **NoSQL** se centran en sistemas complementarios a los SGBD relacionales, que fijan sus prioridades en la escalabilidad y la disponibilidad en contra de la atomicidad y consistencia de los datos.
+Si nos basamos en el acrónimo, el término da la sensación que se refiere a cualquier almacén de datos que no sigue un modelo relacional, los datos no son relacionales y por tanto no utilizan SQL como lenguaje de consulta. Realmente implica que el _No_ hace referencia a _not only_, es decir, que los sistemas **NoSQL** se centran en sistemas complementarios a los SGBD relacionales, que **fijan sus prioridades en la escalabilidad y la disponibilidad en contra de la atomicidad y consistencia** de los datos.
 
 Es decir, más que sustitutos de los sistemas relacionales, las soluciones **NoSQL** se plantean como alternativas y complementarias a los sistemas gestores de bases de datos relacionales.
 
 > **ACID** 
-> Las bases de datos relacionales cumplen las características ACID para ofrecer transaccionalidad sobre los datos:
+> 
+> Las ***bases de datos relacionales*** cumplen las características **ACID** para ofrecer transaccionalidad sobre los datos:
 > - **A**tomicidad: las transacciones implican que se realizan todas las operaciones o no se realiza ninguna.
 > - **C**onsistencia: la base de datos asegura que los datos pasan de un estado válido o otro también.
 > - **I**solation (Aislamiento): Una transacción no afecta a otras transacciones, de manera que la modificación de un registro / documento no es visible por otras lecturas.
 > - **D**urabilidad: La escritura de los datos asegura que una vez finalizada una operación, los datos no se perderán.
 
-Los diferentes tipos de bases de datos *NoSQL* existentes se pueden agrupar en cuatro categorías:
+Los diferentes tipos de bases de datos *NoSQL* existentes se pueden **agrupar en cuatro categorías**:
 
 - **Clave-Valor**: Los almacenes clave-valor son las bases de datos *NoSQL* más simples. Cada elemento de la base de datos se almacena con un nombre de atributo (o clave) junto a su valor, a modo de diccionario. Los almacenes más conocidos son [Redis](https://redis.io), [Riak](https://riak.com) y [AWS DynamoDB](https://aws.amazon.com/es/dynamodb/). Algunos almacenes, como es el caso de _Redis_, permiten que cada valor tenga un tipo (por ejemplo, _integer_) lo cual añade funcionalidad extra.
     
-- **Documentales**: Cada clave se asocia a una estructura compleja que se conoce como documento. Este puede contener diferentes pares clave-valor, o pares de clave-array o incluso documentos anidados, como en un documento JSON. Los ejemplos más conocidos son [MongoDB](https://www.mongodb.com) y [CouchDB](https://couchdb.apache.org/).
+- **Documentales**: Cada clave se asocia a una estructura compleja que se conoce como documento. Este puede contener diferentes pares clave-valor, o pares de clave-array o incluso documentos anidados, como en un documento JSON. Los ejemplos más conocidos son [MongoDB](https://www.mongodb.com), [CouchDB](https://couchdb.apache.org/) o [Elastic Search](https://www.elastic.co/es/).
     
-- **Grafos**: Los almacenes de grafos se usan para almacenar información sobre redes, como pueden ser conexiones sociales. Los ejemplos más conocidos son _Neo4J_, _AWS Neptune_ y _ArangoDB_.
+- **Grafos**: Los almacenes de grafos se usan para almacenar información sobre redes, como pueden ser conexiones sociales. Los ejemplos más conocidos son [Neo4j](https://neo4j.com/), [Amazon Neptune](https://aws.amazon.com/es/neptune/) y [ArangoDB](https://arangodb.com/).
     
-- **Basados en columnas**: Los almacenes basados en columnas como _BigTable_, _Cassandra_ y _HBase_ están optimizados para consultas sobre grandes conjuntos de datos, y almacenan los datos como columnas en vez de como filas.
+- **Basados en columnas**: Los almacenes basados en columnas como [Hypertabla de Google](https://hypertable.com/), [Apache Cassandra](https://cassandra.apache.org/_/index.html) y [Apache HBase](https://hbase.apache.org/) están optimizados para consultas sobre grandes conjuntos de datos, y almacenan los datos como columnas en vez de como filas.
     
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL02.jpg" alt="NoSQL" width="50%" />
+    <img src="../assets/images/NoSQL/NoSQL02.jpg" alt="NoSQL" width="50%" />
 </div>
 
 ## 2.1. Características
 
-Si nos centramos en sus beneficios y los comparamos con las base de datos relacionales, las bases de datos *NoSQL* son más escalables, ofrecen un rendimiento mayor y sus modelos de datos resuelven varios problemas que no se plantearon al definir el modelo relacional:
+Si nos centramos en sus beneficios y los comparamos con las base de datos relacionales, las bases de datos *NoSQL* son **más escalables**, ofrecen un **rendimiento mayor** y sus **modelos de datos resuelven varios problemas** que no se plantearon al definir el modelo relacional:
 
-- Grandes volúmenes de datos estructurados, semi-estructurados y sin estructurar. Casi todas las implementaciones *NoSQL* ofrecen algún tipo de representación para datos sin esquema, lo que permite comenzar con una estructura y con el paso del tiempo, añadir nuevos campos, ya sean sencillos o anidados a datos ya existentes.
-- Sprints ágiles, iteraciones rápidas y frecuentes _commits_/_pushes_ de código, al emplear una sintaxis sencilla para la realización de consultas y la posibilidad de tener un modelo que vaya creciendo al mismo ritmo que el desarrollo.
-- Arquitectura eficiente y escalable diseñada para trabajar con clusters en vez de una arquitectura monolítica y costosa. Las soluciones *NoSQL* soportan la escalabilidad de un modo transparente para el desarrollador y ofrecen una solución cloud.
+- **Grandes volúmenes de datos estructurados, semi-estructurados y sin estructurar**. Casi todas las implementaciones *NoSQL* ofrecen algún tipo de representación para datos sin esquema, lo que permite comenzar con una estructura y con el paso del tiempo, añadir nuevos campos, ya sean sencillos o anidados a datos ya existentes.
+- **Sprints ágiles**, iteraciones rápidas y frecuentes _commits_/_pushes_ de código, al emplear una sintaxis sencilla para la realización de consultas y la posibilidad de tener un modelo que vaya creciendo al mismo ritmo que el desarrollo.
+- **Arquitectura eficiente y escalable diseñada para trabajar con clusters** en vez de una arquitectura monolítica y costosa. Las soluciones *NoSQL* soportan la escalabilidad de un modo transparente para el desarrollador y ofrecen una solución cloud.
 
 Una característica adicional que comparten los sistemas *NoSQL* es que ofrecen un mecanismo de caché de datos integrado (en los sistemas relacionales se pueden configurar de manera externa), pudiendo configurar los sistemas para que los datos se mantengan en memoria y se persistan de manera periódica. El uso de una caché conlleva que la consistencia de los datos no sea completa y podamos tener una consistencia eventual.
 
@@ -72,11 +75,11 @@ Esto casa bastante mal con los enfoques de desarrollo ágil, ya que cada vez que
 
 Si la base de datos es grande, conlleva un proceso lento que implica parar el sistema durante un tiempo considerable. Si frecuentemente cambiamos los datos que la aplicación almacena (al usar un desarrollo iterativo), también tendremos períodos frecuentes de inactividad del sistema, a no ser que utilicemos un [despliegue azul/verde](https://medium.com/devopslatam/introducci%C3%B3n-a-los-despliegues-azul-verde-bb4055811279) y tengamos redundancia de nuestro sistema de almacenamiento. Así pues, no hay un modo efectivo mediante una base de datos relacional de almacenar los datos que están desestructurados o que no se conocen de antemano.
 
-Las bases de datos *NoSQL* se construyen para permitir la inserción de datos sin un esquema predefinido. Esto facilita la modificación de la aplicación en tiempo real, sin preocuparse por interrupciones de servicio. Aunque no tengamos un esquema al guardar la información, sí que podemos definir esquemas de lectura (_schema-on-read_) para comprobar que la información almacenada tiene el formato que espera cargar cada aplicación.
+Las bases de datos *NoSQL* se construyen para permitir la inserción de datos **sin un esquema predefinido**. Esto facilita la modificación de la aplicación en tiempo real, sin preocuparse por interrupciones de servicio. Aunque no tengamos un esquema al guardar la información, sí que podemos definir esquemas de lectura (_schema-on-read_) para comprobar que la información almacenada tiene el formato que espera cargar cada aplicación.
 
 De este modo se consigue un desarrollo más rápido, integración de código más robusto y menos tiempo empleado en la administración de la base de datos.
 
-Aunque lo veremos en profundidad en las siguientes sesiones, los modelos de datos *NoSQL* priman la redundancia de los datos, denormalizando los datos para evitar el uso de _joins_. Por ello, es importante que la definición de los esquemas sea flexible para poder añadir campos conforme la aplicación evolucione.
+Aunque lo veremos en profundidad en las siguientes sesiones, los modelos de datos *NoSQL* **priman la redundancia de los datos, denormalizando los datos para evitar el uso de _joins_**. Por ello, es importante que la definición de los esquemas sea flexible para poder añadir campos conforme la aplicación evolucione.
 
 ## 2.3. Particionado
 
@@ -90,7 +93,7 @@ El particionado no es único de las bases de datos *NoSQL*. Las bases de datos r
 - **Vertical**: diferentes columnas en particiones distintas.
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL03.png" alt="NoSQL" width="70%" />
+    <img src="../assets/images/NoSQL/NoSQL03.png" alt="NoSQL" width="70%" />
 </div>
 
 En el caso de las bases de datos *NoSQL*, el particionado depende del modelo de la base de datos:
@@ -117,7 +120,7 @@ El particionado se realiza mediante un método consistente, como puede ser:
 - Por **rangos** de su id: por ejemplo "los usuarios del 1 al millón están en la partición 1" o "los usuarios cuyo nombre va de la A a la L" en una partición, en otra de la M a la Q, y de la R a la Z en la tercera.
     
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL04.png" alt="NoSQL" width="70%" />
+    <img src="../assets/images/NoSQL/NoSQL04.png" alt="NoSQL" width="70%" />
 </div>
     
 - Por **listas**: dividiendo los datos por la categoría del dato, es decir, en el caso de datos sobre libros, las novelas en una partición, las recetas de cocina en otra, etc..
@@ -125,7 +128,7 @@ El particionado se realiza mediante un método consistente, como puede ser:
 - Mediante un función **_hash_**, la cual devuelve un valor para un elemento que determine a qué partición pertenece.
     
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL05.png" alt="NoSQL" width="70%" />
+    <img src="../assets/images/NoSQL/NoSQL05.png" alt="NoSQL" width="70%" />
 </div>
     
 
@@ -156,7 +159,7 @@ Existen dos formas de realiza la replicación:
 Todas las escrituras se realizan en el nodo principal y después se replican a los nodos secundarios. El nodo primario es un SPOF (_single point of failure_).
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL06.jpg" alt="NoSQL" width="60%" />
+    <img src="../assets/images/NoSQL/NoSQL06.jpg" alt="NoSQL" width="60%" />
 </div>
 
 
@@ -165,7 +168,7 @@ Todas las escrituras se realizan en el nodo principal y después se replican a l
 Todos los nodos tienen el mismo nivel jerárquico, de manera que todos admiten escrituras. Al poder haber escrituras simultáneas sobre el mismo datos en diferentes nodos, pueden darse inconsistencia en los datos.
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL07.png" alt="NoSQL" width="60%" />
+    <img src="../assets/images/NoSQL/NoSQL07.png" alt="NoSQL" width="60%" />
 </div>
 
 La replicación de los datos se utiliza para alcanzar:
@@ -181,7 +184,7 @@ La replicación de los datos se utiliza para alcanzar:
 
 Normalmente, las empresas empezarán con una prueba de baja escalabilidad de una base de datos *NoSQL*, de modo que les permita comprender la tecnología asumiendo muy poco riesgo. La mayoría de las bases de datos *NoSQL* también son open-source, y por tanto se pueden probar sin ningún coste extra. Al tener unos ciclos de desarrollo más rápidos, las empresas pueden innovar con mayor velocidad y mejorar la experiencia de sus cliente a un menor coste.
 
-Elegir la base de datos correcta para el proyecto es un tema importante. Se deben considerar las diferentes alternativas a las infraestructuras _legacy_ teniendo en cuenta varios factores:
+**Elegir la base de datos correcta** para el proyecto es un tema importante. Se deben considerar las diferentes alternativas a las infraestructuras _legacy_ teniendo en cuenta varios factores:
 
 - la escalabilidad o el rendimiento más allá de las capacidades del sistema existente.
 - identificar alternativas viables respecto al software propietario.

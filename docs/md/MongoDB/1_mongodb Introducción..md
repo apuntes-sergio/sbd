@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 1. Introducción
 parent: MongoDB
 permalink: /mongodb/intro

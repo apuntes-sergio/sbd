@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 7. Herramientas visuales para interactuar con *MongoDB*
 parent: MongoDB
 permalink: /mongodb/herramientas
@@ -46,7 +47,7 @@ mongodb-compass
 Si hacemos caso a lo que nos dicen en la guía, directamente instalamos la última versión estable.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB21.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB21.png" alt="MongoDB" width="50%" />
 </div>
 
 ### 7.1.2. Tabajando con *MongoDB* Compass
@@ -56,13 +57,13 @@ Al iniciar la aplicación, la primera vez nos ofrece conectarnos a la base de da
 Una vez conectados a la base de datos, vemos todas las bases de datos exitentes. En la parte inferior tenemos una consola donde podemos actuar de la misma forma que lo hicimos anteriormente.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB22.png" alt="MongoDB" width="60%" />
+    <img src="../assets/images/MongoDB/MongoDB22.png" alt="MongoDB" width="60%" />
 </div>
 
 Dentro de una base de datos, podemos acceder a las colecciones, listar los documentos, y realizar todo tipo de operaciones sobre los mismos:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB23.png" alt="MongoDB" width="60%" />
+    <img src="../assets/images/MongoDB/MongoDB23.png" alt="MongoDB" width="60%" />
 </div>
 
 Así como operaciones específicas sobre documentos en concreto. Si nos colocamos con el ratón sobre un documento aparecen cuatro opciones, para *editar*, *copiar,*, *duplicar* y *borrar* el documento. Haciendo doble click, también lo editamos.
@@ -70,7 +71,7 @@ Así como operaciones específicas sobre documentos en concreto. Si nos colocamo
 Tenemos varias opciones sobre la base de datos, incluso podemos hacer consultas.
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB24.png" alt="MongoDB" width="60%" />
+    <img src="../assets/images/MongoDB/MongoDB24.png" alt="MongoDB" width="60%" />
 </div>
 
 En la imagen:
@@ -91,22 +92,22 @@ Si no disponemos de VSCode:
 - si tenemos la versión completa de Ubuntu, la podemos instalar desde el gestor de aplicaciones:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB25.png" alt="MongoDB" width="20%" />
-    <img src="/docs/img/MongoDB/MongoDB26.png" alt="MongoDB" width="50%" />
+    <img src="../assets/images/MongoDB/MongoDB25.png" alt="MongoDB" width="20%" />
+    <img src="../assets/images/MongoDB/MongoDB26.png" alt="MongoDB" width="50%" />
 </div>
 
 Una vez instalado VSCode, instalamos la extensión de *MongoDB* for VS Code, aqui seguimos los pasos de la web oficial donde tenemos cómo instalar y configurar la conexión: [VSCode: Working with MongoDB](https://code.visualstudio.com/docs/azure/mongodb). Para la conexión, pulsamos sobre el botón de *Advanced* y la conexión es sencilla
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB27.png" alt="MongoDB" width="40%" />    
-    <img src="/docs/img/MongoDB/MongoDB28.png" alt="MongoDB" width="40%" />
+    <img src="../assets/images/MongoDB/MongoDB27.png" alt="MongoDB" width="40%" />    
+    <img src="../assets/images/MongoDB/MongoDB28.png" alt="MongoDB" width="40%" />
 </div>
 
 Una vez conectados, podremos recorrer las colecciones con los datos así como utilizar un *playground* para interactuar de manera similar al shell:
 
 <div align="center">
-    <img src="/docs/img/MongoDB/MongoDB29.png" alt="MongoDB" width="40%" />    
-    <img src="/docs/img/MongoDB/MongoDB30.png" alt="MongoDB" width="40%" />
+    <img src="../assets/images/MongoDB/MongoDB29.png" alt="MongoDB" width="40%" />    
+    <img src="../assets/images/MongoDB/MongoDB30.png" alt="MongoDB" width="40%" />
 </div>
 
 Realmente, esta extensión este pensada para trabajar con opciones avanzadas, como crear índices, generar código en lenguajes como *javascript*, *python* o cualquier otro para realizar todo tipo de operaciones en *MongoDB*, o crear variables con datos y estos utilizarlos en nuestras operaciones. Para más información en la web de la extension: [MongoDB for VS Code. *MongoDB* Without Leaving Your IDE](https://www.mongodb.com/products/tools/vs-code)

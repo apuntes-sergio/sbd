@@ -2,7 +2,7 @@
 layout: default
 title: NoSQL
 description: Almacenamiento de datos. NoSQL
-permalink: /nosql/
+permalink: /nosql
 nav_order: 2
 has_children: true
 ---
@@ -21,3 +21,4 @@ En esta sección veremos las bases de datos NoSQL (*Not Only SQL*)
 
 
 Las secciones en las que están divididas este punto son: 
+

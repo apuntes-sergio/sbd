@@ -1,8 +1,10 @@
 ---
+layout: default
 title: 3. Modelos de Datos
 parent: NoSQL
 permalink: /nosql/ModeloDatos
 nav_order: 3
+toc: true
 ---
 
 <h1>Almacenamiento de datos. NoSQL</h1>
@@ -37,7 +39,7 @@ La principal clasificación de los sistemas de bases de datos *NoSQL* se realiza
 Mientras las bases de datos relacionales almacenan los datos en filas y columnas, las bases de datos documentales emplean documentos. Estos documentos utilizan una estructura JSON, ofreciendo un modo natural e intuitivo para modelar datos de manera similar a la orientación a objetos, donde cada documento es un objeto.
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL08.png" alt="NoSQL" width="50%" />
+    <img src="../assets/images/NoSQL/NoSQL08.png" alt="NoSQL" width="50%" />
 </div>
 
 Los documentos se agrupan en colecciones o bases de datos, dependiendo del sistema, lo que permite agrupar documentos.
@@ -52,7 +54,7 @@ En una base de datos documental, la noción de **esquema es dinámico**: cada do
 
 Perfectamente podemos tener dos documentos que pertenecen a la misma colección, pero con atributos diferentes. Por ejemplo, un primer documento puede ser el siguiente:
 
-```js
+```json
 {   
     "_id": "BW001",   
     "nombre": "Bruce",   
@@ -64,7 +66,7 @@ Perfectamente podemos tener dos documentos que pertenecen a la misma colección,
 
 Mientras que un segundo documento dentro de la misma colección podría ser:
 
-```js
+```json
 {
     "_id": "JK1",   
     "nombre": "Joker",   
@@ -82,6 +84,7 @@ Mientras que un segundo documento dentro de la misma colección podría ser:
     ] 
 }
 ```
+
 Donde 
   1.  Un objeto o subdocumento permite agrupar información similar a una relación ***1:1*** de un modelo relacional. De esta manera, no necesitamos una tabla `Direccion`.
   2.  Un array puede contener valores o documentos, de manera que podríamos tener un array de documentos, permitiendo agrupar información similar a una relación ***1:N*** de un modelo relacional. De esta manera, no necesitamos una tabla `Proyectos`.
@@ -120,7 +123,7 @@ Desde una perspectiva de **modelo de datos**, los almacenes de clave-valor son l
 Su funcionamiento es similar a tener una tabla relacional con dos columnas, por ejemplo `id` y `nombre`, siendo `id` la columna utilizada como clave y `nombre` como valor. Mientras que en una base de datos en el campo `nombre` sólo podemos almacenar datos de tipo cadena o numérico, en un almacén clave-valor, el valor puede ser de un dato simple o un objeto. En muchos casos, se almacena un objeto binario BLOB (_Binary Large Object_). Cuando una aplicación accede mediante la clave y el valor, se almacenan el par de elementos. Si la clave ya existe, el valor se modifica.
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL09.png" alt="NoSQL" width="50%" />
+    <img src="../assets/images/NoSQL/NoSQL09.png" alt="NoSQL" width="50%" />
 </div>
 
 
@@ -204,19 +207,19 @@ Las bases de datos relacionales utilizan la fila como unidad de almacenamiento, 
 Supongamos que tenemos los siguientes datos:
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL10.png" alt="NoSQL" width="40%" />
+    <img src="../assets/images/NoSQL/NoSQL10.png" alt="NoSQL" width="40%" />
 </div>
 
 Dependiendo del almacenamiento en filas o columnas tendríamos la siguiente representación:
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL11.png" alt="NoSQL" width="60%" />
+    <img src="../assets/images/NoSQL/NoSQL11.png" alt="NoSQL" width="60%" />
 </div>
 
 En un formato columnar los datos del mismo tipo se agrupan, lo que permite codificarlos/comprimirlos, lo que mejora el rendimiento de acceso y reduce el tamaño:
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL12.png" alt="NoSQL" width="70%" />
+    <img src="../assets/images/NoSQL/NoSQL12.png" alt="NoSQL" width="70%" />
 </div>
 
 **Sin embargo, a medida que se incrementa la utilización de análisis de datos en memoria**, con soluciones como _Spark_, **los beneficios** relativos de la base de datos columnar comparados con los de las bases de datos orientadas a filas pueden llegar a ser **menos importantes**.
@@ -226,7 +229,7 @@ En un formato columnar los datos del mismo tipo se agrupan, lo que permite codif
 Un modelo basado en columnas se representa como una estructura agregada de dos niveles. El primer nivel formado por un almacén clave-valor, siendo la clave el identificador de la fila, y el valor un nuevo mapa con los datos agregados de la fila (familias de columnas). Los valores de este segundo nivel son las columnas. De este modo, podemos acceder a los datos de un fila, o a una determinada columna:
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL13.png" alt="NoSQL" width="50%" />
+    <img src="../assets/images/NoSQL/NoSQL13.png" alt="NoSQL" width="50%" />
 </div>s
 
 > **BigTable**:  Los modelos de datos basados en columnas se basan en la implementación de _Google_ de la tecnología _BigTable_ ([http://research.google.com/archive/bigtable.html](https://research.google.com/archive/bigtable.html)), la cual consiste en columnas separadas y sin esquema, a modo de mapa de dos niveles.
@@ -351,7 +354,7 @@ Los productos más destacados son:
 Las bases de datos de grafos almacenan entidades y las relaciones entre estas entidades. Las entidades se conocen como nodos, los cuales tienen propiedades. Cada nodo es similar a una instancia de un objeto. Las relaciones, también conocidas como vértices, a su vez tienen propiedades, y su sentido es importante.
 
 <div align="center">
-    <img src="/docs/img/NoSQL/NoSQL14.png" alt="NoSQL" width="50%" />
+    <img src="../assets/images/NoSQL/NoSQL14.png" alt="NoSQL" width="50%" />
 </div>
 
 Los nodos se organizan mediante relaciones que facilitan encontrar patrones de información existente entre los nodos. Este tipo de organización permite almacenar los datos una vez e interpretar los datos de diferentes maneras dependiendo de sus relaciones.
