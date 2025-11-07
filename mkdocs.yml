@@ -1,0 +1,69 @@
+site_name: Apuntes Sistemas en Big Data
+site_url: https://sergio-apuntes.github.io/sbd/
+
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - toc.follow
+    - navigation.top              # Muestra el botón para volver al principio
+    - content.code.copy           # Botón de copiar en bloques de código
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  # los siguientes son para los bloques de código
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Tabs para códigos de dos lenguajes o más
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true  
+
+plugins:
+  - glightbox
+  - search
+nav:
+  - index.md
+  - NoSQL: 
+    - noSQL/1_NoSQL Intro.md
+    - noSQL/2_NoSQL NoSoloSQL.md
+    - noSQL/3_NoSQL ModeloDatos.md
+    - noSQL/4_NoSQL Consistencia.md
+  - MongoDB: 
+    - MongoDB/1_mongodb Introducción..md
+    - MongoDB/2_mongodb MongoDB.md
+    - MongoDB/3_mongodb ModeladoDatos.md
+    - MongoDB/4_mongodb Instalación.md
+    - MongoDB/5_mongodb PrimerosPasos.md
+    - MongoDB/6_mongodb OperacionesCRUD.md
+    - MongoDB/7_mongodb OperacionesDatos.md
+  - ETL con Apache NiFi:
+    - ApacheNiFi/1_ETL.md
+    - ApacheNiFi/2_PostgreSQL.md
+    - ApacheNiFi/3_ApacheNiFi.md
+#  - Elasctic Stack: 
+#    - ElasticStack/1_elastic_stack.md
+#    - ElasticStack/2_elastic_operaciones.md  
+#    - ElasticStack/3_elastic_kibana.md       
+#    - ElasticStack/4_elastic_python.md  
+#    - ElasticStack/5_elastic_nifi.md 
+    
+    
